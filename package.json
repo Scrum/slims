@@ -1,0 +1,38 @@
+{
+  "name": "slim-grid",
+  "title": "slim-grid",
+  "version": "0.0.0",
+  "description": "Vanilla CSS grid with support columns and rows",
+  "main": "dist/slim-grid.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitScrum/grid-slim.git"
+  },
+  "keywords": [
+    "CSS",
+    "Grid"
+  ],
+  "author": {
+    "name": "GitScrum",
+    "url": "https://github.com/GitScrum"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "bugs": {
+    "url": "https://github.com/GitScrum/slim-grid/issues"
+  },
+  "homepage": "https://github.com/GitScrum/slim-grid",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-conventional-changelog": "^0.6.0",
+    "gulp-postcss": "^6.0.0",
+    "gulp-release-tasks": "0.0.3",
+    "gulp-rename": "^1.2.2",
+    "postcss-banner": "^1.0.0"
+  }
+}
