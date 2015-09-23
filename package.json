@@ -36,12 +36,10 @@
     "gulp-rename": "^1.2.2",
     "postcss-banner": "^1.0.0",
     "postcss-calc": "^5.0.0",
-    "postcss-css-variables": "^0.5.0",
     "postcss-cssnext": "^2.1.0",
     "postcss-custom-properties": "^5.0.0",
     "postcss-for": "^2.0.0",
     "postcss-import": "^7.0.0",
-    "postcss-nested": "^1.0.0",
-    "postcss-simple-vars": "^1.0.1"
+    "postcss-nested": "^1.0.0"
   }
 }

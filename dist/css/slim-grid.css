@@ -94,3 +94,7 @@
 .sl-col-12 {
 	width: 100%;
 }
+
+.sl-row-var(--grid-col-count) {
+	height: calc( (var(--grid-col-count) * 1)/ 12);
+}

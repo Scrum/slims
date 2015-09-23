@@ -45,7 +45,7 @@
 }
 
 /* col grid */
-@for $i from 1 to 12  {
+@for $i from 1 to var(--grid-col-count) {
 	.sl-col-$i {
 		width: calc( ($i * 100%)/ var(--grid-col-count));
 	}

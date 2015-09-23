@@ -39,13 +39,12 @@ gulp.task('pcss', function() {
     		require('postcss-import')(),
     		require('postcss-nested')(),
     		require('postcss-custom-properties')(),
-    		//require('postcss-simple-vars')(),
-    		//require('postcss-css-variables')(),
-    		require('postcss-for')(),
-    		require('postcss-calc')({ precision: 2 }),
-    		//require('postcss-cssnext')({ compress: true }),
-    		require('postcss-banner')({banner: slim_banner})
+            require('postcss-calc')({ precision: 2 })
     	]))
+        .pipe(postcss([
+            require('postcss-for')(),
+            require('postcss-banner')({banner: slim_banner})
+        ]))
     	.pipe(rename({ extname: '.css' }))
     	.pipe(gulp.dest('./dist/css/'));
 });
