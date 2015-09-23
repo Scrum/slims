@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
-	banner = require('postcss-banner'),
 	rename = require('gulp-rename'),
+	jade = require('gulp-jade'),
 	changelog = require('gulp-conventional-changelog');
 
 	require('gulp-release-tasks')(gulp);
@@ -17,14 +17,6 @@ var pkg = require('./package.json'),
 		'*'
 		].join('\n');
 
-/*gulp.task('bump', function(type){
-	console.log(type);
-	var type = type ? type : 'path';
-	gulp.src('./package.json')
-		.pipe(bump({type: type}))
-		.pipe(gulp.dest('./'));
-});*/
-
 gulp.task('changelog', function() {
     return gulp.src('CHANGELOG.md', {
         buffer: false
@@ -35,16 +27,29 @@ gulp.task('changelog', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('jade', function() {
+    return gulp.src('app/jade/*.jade')
+    	.pipe(jade())
+    	.pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('pcss', function() {
-	var processors = [
-		banner({banner: slim_banner})
-	];
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
-    	.pipe(postcss(processors))
+    	.pipe(postcss([
+    		require('postcss-import')(),
+    		require('postcss-nested')(),
+    		require('postcss-custom-properties')(),
+    		//require('postcss-simple-vars')(),
+    		//require('postcss-css-variables')(),
+    		require('postcss-for')(),
+    		require('postcss-calc')({ precision: 2 }),
+    		//require('postcss-cssnext')({ compress: true }),
+    		require('postcss-banner')({banner: slim_banner})
+    	]))
     	.pipe(rename({ extname: '.css' }))
-    	.pipe(gulp.dest('./dest/css/'));
+    	.pipe(gulp.dest('./dist/css/'));
 });
 
 
 
-gulp.task('default',['pcss']);
+gulp.task('default',['pcss', 'jade']);

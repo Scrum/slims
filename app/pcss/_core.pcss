@@ -1,0 +1,52 @@
+[class*="sl-col"],
+[class*="sl-row"] {
+	box-sizing: border-box;
+}
+
+
+[class*="sl-container-row"] {
+	margin-top: calc(var(--grid-gutter) / 2);
+	margin-bottom: calc(var(--grid-gutter) / 2);
+
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+[class*="sl-row"] {
+	padding-top: calc(var(--grid-gutter) / 2);
+	padding-bottom: calc(var(--grid-gutter) / 2);
+}
+
+
+[class*="sl-container-col"] {
+	margin-left: calc(var(--grid-gutter) / 2);
+	margin-right: calc(var(--grid-gutter) / 2);
+
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+[class*="sl-col"] {
+	float: left;
+	padding-left: calc(var(--grid-gutter) / 2);
+	padding-right: calc(var(--grid-gutter) / 2);
+}
+
+/* col grid */
+@for $i from 1 to 12  {
+	.sl-col-$i {
+		width: calc( ($i * 100%)/ var(--grid-col-count));
+	}
+}
