@@ -33,21 +33,39 @@ gulp.task('jade', function() {
     	.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('pcss', function() {
+gulp.task('rule', function() {
+	return gulp.src('./app/pcss/' + pkg.name + '.pcss')
+	    .pipe(postcss([
+	    	require('postcss-import')(),
+	    	require('postcss-nested')(),
+	    	require('postcss-for-var')(),
+	    	//require('postcss-for')()
+	    ]))
+	    .pipe(rename({ prefix: '_' }))
+	    .pipe(gulp.dest('./app/pcss/'));
+});
+
+/*gulp.task('prepcss', function() {
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
     	.pipe(postcss([
     		require('postcss-import')(),
     		require('postcss-nested')(),
-    		require('postcss-custom-properties')(),
-            require('postcss-calc')({ precision: 2 }),
+    		require('postcss-custom-properties')()
+    	]))
+    	.pipe(rename({ prefix: '_' }))
+    	.pipe(gulp.dest('./app/pcss/'));
+});
+
+gulp.task('pcss', ['prepcss'], function() {
+    return gulp.src('./app/pcss/' + pkg.name + '.pcss')
+    	.pipe(postcss([
     		require('postcss-for')(),
+            require('postcss-calc')({ precision: 2 }),
     		require('postcss-banner')({banner: slim_banner})
     	]))
-        .pipe(postcss([
-        ]))
     	.pipe(rename({ extname: '.css' }))
     	.pipe(gulp.dest('./dist/css/'));
-});
+});*/
 
 
 
