@@ -1,7 +1,7 @@
 {
   "name": "slim-grid",
   "title": "slim-grid",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Vanilla CSS grid with support columns and rows",
   "main": "dist/slim-grid.css",
   "scripts": {
