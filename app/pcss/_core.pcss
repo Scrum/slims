@@ -27,7 +27,7 @@
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i);
 	}
-	[class=*"sl-vertical"] {
+	[class*="sl-vertical"] {
 		line-height: calc(var(--grid-row-height) * $i);
 
 		& > *{
@@ -39,9 +39,9 @@
 			line-height: normal;
 		}
 	}
-	[class=*"sl-vertical-top"] { vertical-align: top; }
-	[class=*"sl-vertical-middle"] { vertical-align: middle; }
-	[class=*"sl-vertical-bottom"] { vertical-align: bottom; }
+	.sl-vertical-top > *{ vertical-align: top; }
+	.sl-vertical-middle > * { vertical-align: middle; }
+	.sl-vertical-bottom > * { vertical-align: bottom; }
 	.sl-row-$i {
 		height: calc( ($i * 100%)/ var(--grid-col-count));
 	}
