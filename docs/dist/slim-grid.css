@@ -1,0 +1,90 @@
+/**
+* Copyright (c) 2015 GitScrum
+* slim-grid - Vanilla CSS grid with support columns and rows
+* @version 0.1.0
+* @link https://github.com/GitScrum/slim-grid
+* @license MIT
+**/
+[class*="sl-col"],
+[class*="sl-row"] {
+	box-sizing: border-box;
+}
+[class*="sl-container-row"]:after, [class*="sl-container-row"]:before, [class*="sl-container-col"]:after, [class*="sl-container-col"]:before, [class*="sl-container"]:after, [class*="sl-container"]:before {
+	content: "";
+	display: table;
+}
+[class*="sl-container-row"]:after, [class*="sl-container-col"]:after, [class*="sl-container"]:after {
+	clear: both;
+}
+
+/* row grid */
+[class*="sl-container-row"] {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+[class*="sl-row"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* col grid */
+[class*="sl-container-col"] {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+[class*="sl-col"] {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sl-col-1 {
+	width: 8.333%;
+}
+
+.sl-col-2 {
+	width: 16.667%;
+}
+
+.sl-col-3 {
+	width: 25%;
+}
+
+.sl-col-4 {
+	width: 33.333%;
+}
+
+.sl-col-5 {
+	width: 41.667%;
+}
+
+.sl-col-6 {
+	width: 50%;
+}
+
+.sl-col-7 {
+	width: 58.333%;
+}
+
+.sl-col-8 {
+	width: 66.667%;
+}
+
+.sl-col-9 {
+	width: 75%;
+}
+
+.sl-col-10 {
+	width: 83.333%;
+}
+
+.sl-col-11 {
+	width: 91.667%;
+}
+
+.sl-col-12 {
+	width: 100%;
+}
