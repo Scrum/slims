@@ -4,11 +4,25 @@
 	{% include header.html %}
 </head>
 <body>
-	<h1>{{ page.title }}</h1>
-    <p>{{ page.lead }}</p>
+	
+	<div class="sl-container-row-2 sl-vertical-center">
+		<div class="sl-col-4">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="sl-col-2">
+			<a href="#">Link</a>
+		</div>
+	</div>
 
-
-    {{ content }}
+	<div class="sl-container">
+		<div class="sl-col-4">
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.lead }}</p>
+		</div>
+		<div class="sl-col-8">
+			{{ content }}
+		</div>
+	</div>
 
     <p><a href="{{ site.repo }}">View on GitHub</a></p>
 </body>
