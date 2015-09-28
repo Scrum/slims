@@ -2,14 +2,12 @@
 markdown:          kramdown
 highlighter:       pygments
 
-# Permalinks
-permalink:         pretty
-
 # Server
 source:            docs
-destination:       _gh_pages
-port:              9001
-baseurl:           /
+destination:       _gh-pages
 encoding:          UTF-8
+
+# Filtering Content
+published: false
 
 repo:              https://github.com/gitscrum/slim-grid
