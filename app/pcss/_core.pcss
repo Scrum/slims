@@ -26,23 +26,22 @@
 
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i);
-
-		&[class=*"sl-vertical"] {
-			line-height: calc(var(--grid-row-height) * $i);
-
-			& > *{
-				display: inline-block;
-				float: none;
-			}
-
-			& * {
-				line-height: normal;
-			}
-		}
-		&[class="sl-vertical-top"] { vertical-align: top; }
-		&[class="sl-vertical-center"] { vertical-align: middle; }
-		&[class="sl-vertical-bottom"] { vertical-align: bottom; }
 	}
+	[class=*"sl-vertical"] {
+		line-height: calc(var(--grid-row-height) * $i);
+
+		& > *{
+			display: inline-block;
+			float: none;
+		}
+
+		& * {
+			line-height: normal;
+		}
+	}
+	[class=*"sl-vertical-top"] { vertical-align: top; }
+	[class=*"sl-vertical-middle"] { vertical-align: middle; }
+	[class=*"sl-vertical-bottom"] { vertical-align: bottom; }
 	.sl-row-$i {
 		height: calc( ($i * 100%)/ var(--grid-col-count));
 	}
