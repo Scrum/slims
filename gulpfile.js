@@ -26,6 +26,11 @@ gulp.task('changelog', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('docs',['pcss'], function() {
+    return gulp.src('./dist/*')
+      .pipe(gulp.dest('./docs/dist/'));
+});
+
 gulp.task('pcss', function() {
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
     	.pipe(postcss([
@@ -44,4 +49,4 @@ gulp.task('pcss', function() {
 
 
 
-gulp.task('default',['pcss']);
+gulp.task('default',['pcss', '']);
