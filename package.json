@@ -29,7 +29,6 @@
   "homepage": "https://github.com/GitScrum/slim-grid",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-conventional-changelog": "^0.6.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-postcss": "^6.0.0",
     "gulp-release-tasks": "0.0.3",
