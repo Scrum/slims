@@ -9,11 +9,11 @@
 [class*="sl-row"] {
 	box-sizing: border-box;
 }
-[class*="sl-container-row"]:after, [class*="sl-container-row"]:before, [class*="sl-container-col"]:after, [class*="sl-container-col"]:before {
+[class*="sl-container-row"]:after, [class*="sl-container-row"]:before, [class*="sl-container-col"]:after, [class*="sl-container-col"]:before, [class*="sl-container"]:after, [class*="sl-container"]:before {
 	content: "";
 	display: table;
 }
-[class*="sl-container-row"]:after, [class*="sl-container-col"]:after {
+[class*="sl-container-row"]:after, [class*="sl-container-col"]:after, [class*="sl-container"]:after {
 	clear: both;
 }
 
