@@ -2,6 +2,7 @@
 html, body { margin: 0; padding: 0; border: 0;}
 body {color: #212121; font: 100% "Robot Mono", sans-serif;}
 a {color: #607d8b;text-decoration: none;}
+h1, h2 {margin: 0;padding: 0;}
 h1 {font-size: 36px;}
 h2 {font-size: 28px;}
 h1, h2 { text-transform: capitalize; }
