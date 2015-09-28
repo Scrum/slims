@@ -19,6 +19,31 @@
 	padding-bottom: calc(var(--grid-gutter) / 2);
 }
 
+@for $i from 1 to var(--grid-row-count) {
+	.sl-row-offset-$i {
+		margin-top: calc( ( 100% / var(--grid-col-count) ) * $i );
+	}
+
+	.sl-container-row-$i {
+		height: calc(var(--grid-row-height) * $i);
+
+		&.sl-vertical-center {
+			line-height: calc(var(--grid-row-height) * $i);
+
+			& > {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			& * {
+				line-height: normal;
+			}
+		}
+	}
+	.sl-row-$i {
+		height: calc( ($i * 100%)/ var(--grid-col-count));
+	}
+}
 
 /* col grid */
 [class*="sl-container-col"] {
@@ -33,6 +58,9 @@
 }
 
 @for $i from 1 to var(--grid-col-count) {
+	.sl-col-offset-$i {
+		margin-left: calc( ( 100% / var(--grid-col-count) ) * $i );
+	}
 	.sl-col-$i {
 		width: calc( ($i * 100%)/ var(--grid-col-count));
 	}
