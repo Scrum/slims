@@ -24,7 +24,7 @@ gulp.task('jekyll', function() {
 
 gulp.task('deploy', ['pcss', 'jekyll'] ,function() {
     return gulp.src('./_gh-pages/**/*')
-      //.pipe(ghPages())
+      .pipe(ghPages())
 });
 
 gulp.task('pcss', function() {
