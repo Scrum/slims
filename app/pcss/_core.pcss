@@ -7,9 +7,10 @@
 	@mixin clearfix;
 }
 
+/* row grid */
 [class*="sl-container-row"] {
-	margin-top: calc(var(--grid-gutter) / 2);
-	margin-bottom: calc(var(--grid-gutter) / 2);
+	margin-top: -calc(var(--grid-gutter) / 2);
+	margin-bottom: -calc(var(--grid-gutter) / 2);
 }
 
 [class*="sl-row"] {
@@ -18,9 +19,10 @@
 }
 
 
+/* col grid */
 [class*="sl-container-col"] {
-	margin-left: calc(var(--grid-gutter) / 2);
-	margin-right: calc(var(--grid-gutter) / 2);
+	margin-left: -calc(var(--grid-gutter) / 2);
+	margin-right: -calc(var(--grid-gutter) / 2);
 }
 
 [class*="sl-col"] {
@@ -29,7 +31,6 @@
 	padding-right: calc(var(--grid-gutter) / 2);
 }
 
-/* col grid */
 @for $i from 1 to var(--grid-col-count) {
 	.sl-col-$i {
 		width: calc( ($i * 100%)/ var(--grid-col-count));
