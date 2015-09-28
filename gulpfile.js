@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	rename = require('gulp-rename'),
-	jade = require('gulp-jade'),
 	changelog = require('gulp-conventional-changelog');
 
 	require('gulp-release-tasks')(gulp);
@@ -27,12 +26,6 @@ gulp.task('changelog', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('jade', function() {
-    return gulp.src('app/jade/*.jade')
-    	.pipe(jade())
-    	.pipe(gulp.dest('./dist/'));
-});
-
 gulp.task('pcss', function() {
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
     	.pipe(postcss([
@@ -42,7 +35,7 @@ gulp.task('pcss', function() {
             require('postcss-for-variables')(),
             require('postcss-for')(),
             require('postcss-custom-properties')(),
-            require('postcss-calc')({ precision: 2 }),
+            require('postcss-calc')({ precision: 3 }),
     		require('postcss-banner')({banner: slim_banner})
     	]))
     	.pipe(rename({ extname: '.css' }))
