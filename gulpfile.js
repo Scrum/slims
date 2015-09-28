@@ -44,4 +44,4 @@ gulp.task('pcss', function() {
 
 
 
-gulp.task('default',['pcss', 'jade']);
+gulp.task('default',['pcss']);
