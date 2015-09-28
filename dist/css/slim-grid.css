@@ -1,154 +1,78 @@
 /**
 * Copyright (c) 2015 GitScrum
 * slim-grid - Vanilla CSS grid with support columns and rows
-* @version 0.0.0
+* @version 0.1.0
 * @link https://github.com/GitScrum/slim-grid
 * @license MIT
 **/
-:root {
-	--grid-gutter: 20px;
-	--grid-col-count: 12;
-	--grid-row-count: 13;
-	--grid-row-height: 20px;
-}
 [class*="sl-col"],
 [class*="sl-row"] {
 	box-sizing: border-box;
 }
-
-
-[class*="sl-container-row"] {
-	margin-top: calc(var(--grid-gutter) / 2);
-	margin-bottom: calc(var(--grid-gutter) / 2);
-}
-
-
-[class*="sl-container-row"]:after,
-	[class*="sl-container-row"]:before {
+[class*="sl-container-row"]:after, [class*="sl-container-row"]:before, [class*="sl-container-col"]:after, [class*="sl-container-col"]:before {
 	content: "";
 	display: table;
 }
-
-
-[class*="sl-container-row"]:after {
+[class*="sl-container-row"]:after, [class*="sl-container-col"]:after {
 	clear: both;
 }
 
+[class*="sl-container-row"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 [class*="sl-row"] {
-	padding-top: calc(var(--grid-gutter) / 2);
-	padding-bottom: calc(var(--grid-gutter) / 2);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
 [class*="sl-container-col"] {
-	margin-left: calc(var(--grid-gutter) / 2);
-	margin-right: calc(var(--grid-gutter) / 2);
-}
-
-
-[class*="sl-container-col"]:after,
-	[class*="sl-container-col"]:before {
-	content: "";
-	display: table;
-}
-
-
-[class*="sl-container-col"]:after {
-	clear: both;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 [class*="sl-col"] {
 	float: left;
-	padding-left: calc(var(--grid-gutter) / 2);
-	padding-right: calc(var(--grid-gutter) / 2);
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* col grid */
 .sl-col-1 {
-	width: calc( 1/ var(--grid-col-count));
+	width: 8.33%;
 }
 .sl-col-2 {
-	width: calc( 2/ var(--grid-col-count));
+	width: 16.67%;
 }
 .sl-col-3 {
-	width: calc( 3/ var(--grid-col-count));
+	width: 25%;
 }
 .sl-col-4 {
-	width: calc( 4/ var(--grid-col-count));
+	width: 33.33%;
 }
 .sl-col-5 {
-	width: calc( 5/ var(--grid-col-count));
+	width: 41.67%;
 }
 .sl-col-6 {
-	width: calc( 6/ var(--grid-col-count));
+	width: 50%;
 }
 .sl-col-7 {
-	width: calc( 7/ var(--grid-col-count));
+	width: 58.33%;
 }
 .sl-col-8 {
-	width: calc( 8/ var(--grid-col-count));
+	width: 66.67%;
 }
 .sl-col-9 {
-	width: calc( 9/ var(--grid-col-count));
+	width: 75%;
 }
 .sl-col-10 {
-	width: calc( 10/ var(--grid-col-count));
+	width: 83.33%;
 }
 .sl-col-11 {
-	width: calc( 11/ var(--grid-col-count));
+	width: 91.67%;
 }
 .sl-col-12 {
-	width: calc( 12/ var(--grid-col-count));
-}
-
-.sl-col-1 {
-	width: calc( 1/ var(--grid-col-count));
-}
-
-.sl-col-2 {
-	width: calc( 2/ var(--grid-col-count));
-}
-
-.sl-col-3 {
-	width: calc( 3/ var(--grid-col-count));
-}
-
-.sl-col-4 {
-	width: calc( 4/ var(--grid-col-count));
-}
-
-.sl-col-5 {
-	width: calc( 5/ var(--grid-col-count));
-}
-
-.sl-col-6 {
-	width: calc( 6/ var(--grid-col-count));
-}
-
-.sl-col-7 {
-	width: calc( 7/ var(--grid-col-count));
-}
-
-.sl-col-8 {
-	width: calc( 8/ var(--grid-col-count));
-}
-
-.sl-col-9 {
-	width: calc( 9/ var(--grid-col-count));
-}
-
-.sl-col-10 {
-	width: calc( 10/ var(--grid-col-count));
-}
-
-.sl-col-11 {
-	width: calc( 11/ var(--grid-col-count));
-}
-
-.sl-col-12 {
-	width: calc( 12/ var(--grid-col-count));
-}
-
-.sl-col-13 {
-	width: calc( 13/ var(--grid-col-count));
+	width: 100%;
 }
