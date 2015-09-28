@@ -41,7 +41,7 @@ gulp.task('pcss', function() {
     	]))
     	.pipe(rename({ extname: '.css' }))
     	.pipe(gulp.dest('./dist/css/'))
-        .pipe(gulp.dest('./docs/dist/'))
+        .pipe(gulp.dest('./docs/dist/css/'))
 });
 
 
