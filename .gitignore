@@ -1,3 +1,4 @@
 _gh-pages/
 .publish/
+npm-debug.log
 node_modules/
