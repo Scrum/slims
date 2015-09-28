@@ -1,0 +1,15 @@
+# Dependencies
+markdown:          kramdown
+highlighter:       pygments
+
+# Permalinks
+permalink:         pretty
+
+# Server
+source:            docs
+destination:       _gh_pages
+port:              9001
+baseurl:           /
+encoding:          UTF-8
+
+repo:              https://github.com/gitscrum/slim-grid
