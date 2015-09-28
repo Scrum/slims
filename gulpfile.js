@@ -37,9 +37,11 @@ gulp.task('pcss', function() {
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
     	.pipe(postcss([
             require('postcss-import')(),
+            require('postcss-mixins')(),
             require('postcss-nested')(),
             require('postcss-for-variables')(),
             require('postcss-for')(),
+            require('postcss-custom-properties')(),
             require('postcss-calc')({ precision: 2 }),
     		require('postcss-banner')({banner: slim_banner})
     	]))
