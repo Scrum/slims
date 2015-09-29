@@ -3,8 +3,9 @@ markdown:          kramdown
 highlighter:       pygments
 
 # Server
-source:            docs
-destination:       _gh-pages
+source:            ./docs
+baseurl:           /
+destination:       ./_gh-pages
 encoding:          UTF-8
 
 # Filtering Content
