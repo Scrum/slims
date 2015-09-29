@@ -2,9 +2,25 @@
 html, body { margin: 0; padding: 0; border: 0;}
 body {color: #212121; font: 100% "Robot Mono", sans-serif;}
 a {color: #607d8b;text-decoration: none;}
-h1, h2 {margin: 0;padding: 0;}
+h1, h2, p {margin: 0;padding: 0;}
 h1 {font-size: 36px;}
 h2 {font-size: 28px;}
 h1, h2 { text-transform: capitalize; }
-.demo-content { box-sizing: border-box;}
-.highlight {border: 1px solid #bdbdbd;padding: 20px;background-color: #eeeeee;}
+.highlight {border: 1px solid #bdbdbd;padding: 20px;background-color: #eeeeee;margin-bottom: 20px;}
+.demo-brand { font-size: 28px; line-height: 1; }
+.demo-space {margin-bottom: 20px;}
+.demo-nav {
+	background-color:  #009688;
+}
+.demo-nav a {
+	color: #fff;
+	border: 1px solid #00796b;
+}
+.demo-nav a:hover {
+	background-color: #00796b;
+}
+.demo-col [class*="sl-col"],
+.demo-row [class*="sl-row"] {
+	background-color: #cfd8dc;
+	border: 1px solid #90a4ae;
+}

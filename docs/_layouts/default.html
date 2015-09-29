@@ -4,26 +4,21 @@
 	{% include header.html %}
 </head>
 <body>
-	
-	<div class="sl-container-row-2 sl-vertical-top">
-		<div class="sl-col-4">
-			<h1>{{ page.title }}</h1>
-		</div>
-		<div class="sl-col-2 sl-row-12">
-			<a href="#">Link</a>
-		</div>
+
+	<div class="sl-container-row-1 sl-vertical-center demo-nav demo-space">
+		<a href="/" class="demo-brand sl-col sl-row-12">Slim</a>
+		<a href="/grid.html" class="sl-col sl-row-12">Grid</a>
+		<a href="/example.html" class="sl-col sl-row-12">Example</a>
 	</div>
 
-	<div class="sl-container">
-		<div class="sl-col-4">
+	<div class="sl-container demo-section">
+		<div class="sl-col-12 demo-space">
 			<h1>{{ page.title }}</h1>
-			<p>{{ page.lead }}</p>
+			<p>{{ page.lead }} <a href="{{ site.repo }}">view on GitHub</a></p>
 		</div>
-		<div class="sl-col-8">
-			{{ content }}
-		</div>
+		{{ content }}
 	</div>
 
-    <p><a href="{{ site.repo }}">View on GitHub</a></p>
+    <p></p>
 </body>
 </html>
