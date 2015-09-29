@@ -8,11 +8,10 @@
 }
 
 /* row grid */
-/* [class*="sl-container-row"] { need rename class
-	
+.sl-container-row {
 	margin-top: -calc(var(--grid-gutter) / 2);
 	margin-bottom: -calc(var(--grid-gutter) / 2);
-} */
+}
 
 [class*="sl-row"] {
 	padding-top: calc(var(--grid-gutter) / 2);
@@ -23,32 +22,24 @@
 	.sl-row-offset-$i {
 		margin-top: calc( ( 100% / var(--grid-col-count) ) * $i );
 	}
-
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i);
-	}
-	[class*="sl-vertical"] {
-		line-height: calc(var(--grid-row-height) * $i);
-
-		& > *{
-			display: inline-block;
-			float: none;
-		}
-
-		& * {
-			line-height: normal;
+		&.sl-vertical-center {
+			& > * {
+				line-height: calc(var(--grid-row-height) * $i);
+			}
+			& > [class*="sl-row"] {
+				line-height: calc((var(--grid-row-height) * $i) - var(--grid-gutter));
+			}
 		}
 	}
-	.sl-vertical-top > *{ vertical-align: top; }
-	.sl-vertical-middle > * { vertical-align: middle; }
-	.sl-vertical-bottom > * { vertical-align: bottom; }
 	.sl-row-$i {
 		height: calc( ($i * 100%)/ var(--grid-col-count));
 	}
 }
 
 /* col grid */
-[class*="sl-container-col"] {
+.sl-container-col {
 	margin-left: -calc(var(--grid-gutter) / 2);
 	margin-right: -calc(var(--grid-gutter) / 2);
 }
