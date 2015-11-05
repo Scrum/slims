@@ -32,10 +32,10 @@ gulp.task('pcss', function() {
     	.pipe(postcss([
             require('postcss-import')(),
             require('postcss-mixins')(),
-            require('postcss-nested')(),
             require('postcss-for-variables')(),
             require('postcss-for')(),
             require('postcss-custom-properties')(),
+            require('postcss-nested')(),
             require('postcss-calc')({ precision: 3 }),
     		require('postcss-banner')({banner: slim_banner})
     	]))
