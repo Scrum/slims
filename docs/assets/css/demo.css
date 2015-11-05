@@ -10,14 +10,17 @@ h1, h2 { text-transform: capitalize; }
 .demo-brand { font-size: 28px; line-height: 1; }
 .demo-space {margin-bottom: 20px;}
 .demo-nav {
-	background-color:  #009688;
+	background-color:  teal;
+	padding: 0 10px;
 }
 .demo-nav a {
 	color: #fff;
-	border: 1px solid #00796b;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 20px;
 }
 .demo-nav a:hover {
-	background-color: #00796b;
+	background-color: rgba(255,255,255, .2);
 }
 .demo-col [class*="sl-col"],
 .demo-row [class*="sl-row"] {
