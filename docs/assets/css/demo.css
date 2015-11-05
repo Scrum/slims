@@ -30,4 +30,5 @@ h1, h2 { text-transform: capitalize; }
 }
 .demo-container {
 	background-color: cadetblue;
+	clear: both;
 }
