@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/GitScrum/Slim",
   "devDependencies": {
+    "babel-core": "^5.8.34",
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-postcss": "^6.0.0",

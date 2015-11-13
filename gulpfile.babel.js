@@ -1,12 +1,12 @@
-var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    rename = require('gulp-rename'),
-    ghPages = require('gulp-gh-pages'),
-    shell = require('gulp-shell')
+import gulp from 'gulp';
+import postcss from 'gulp-postcss';
+import rename from 'gulp-rename';
+import ghPages from 'gulp-gh-pages';
+import shell from 'gulp-shell';
 
-    require('gulp-release-tasks')(gulp);
+require('gulp-release-tasks')(gulp);
 
-var pkg = require('./package.json'),
+let pkg = require('./package.json'),
     slim_banner = [
         '*',
         '* Copyright (c) ' + new Date().getFullYear() + ' ' + pkg.author.name,
@@ -17,17 +17,17 @@ var pkg = require('./package.json'),
         '*'
         ].join('\n');
 
-gulp.task('jekyll', function() {
+gulp.task('jekyll', () => {
     return gulp.src('*.js', {read: false})
       .pipe(shell('jekyll build'))
 });
 
-gulp.task('deploy', ['pcss', 'jekyll'] ,function() {
+gulp.task('deploy', ['pss', 'jekyll'] ,() => {
     return gulp.src('./_gh-pages/**/*')
       .pipe(ghPages())
 });
 
-gulp.task('pss', function() {
+gulp.task('pss', () => {
     return gulp.src('./src/pss/' + pkg.name + '.pss')
         .pipe(postcss([
             require('postcss-import')(),
@@ -46,4 +46,4 @@ gulp.task('pss', function() {
 
 
 
-gulp.task('default',['pcss']);
+gulp.task('default',['pss']);
