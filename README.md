@@ -1,4 +1,4 @@
-# [Vanilla CSS grid with support columns and rows](http://gitscrum.github.io/Slim/)
+# [Vanilla CSS framework](http://gitscrum.github.io/Slim/)
 ![Bower version](https://img.shields.io/bower/v/Slim.svg?style=flat-square)
 ![Bower](https://img.shields.io/bower/l/Slim.svg?style=flat-square)
 ![GitHub tag](https://img.shields.io/github/tag/GitScrum/Slim.svg?style=flat-square)
