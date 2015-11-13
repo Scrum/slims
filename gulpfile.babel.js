@@ -3,19 +3,18 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import shell from 'gulp-shell';
+import pkg from './package.json';
 
 require('gulp-release-tasks')(gulp);
 
-let pkg = require('./package.json'),
-    slim_banner = [
-        '*',
-        '* Copyright (c) ' + new Date().getFullYear() + ' ' + pkg.author.name,
-        '* ' + pkg.name + ' - ' + pkg.description,
-        '* @version ' + pkg.version,
-        '* @link ' + pkg.homepage,
-        '* @license ' + pkg.license.type,
-        '*'
-        ].join('\n');
+let slim_banner = (
+`*
+* Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
+* ${pkg.name} - ${pkg.description}
+* @version ${pkg.version}
+* @link ${pkg.homepage}
+* @license ${pkg.license.type}
+*`);
 
 gulp.task('jekyll', () => {
     return gulp.src('*.js', {read: false})
