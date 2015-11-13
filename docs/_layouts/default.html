@@ -7,15 +7,34 @@
 
 	<div class="demo-nav demo-space">
 		<a href="{{ page.base_url }}" class="demo-brand">Slim</a>
-		<a href="{{ page.base_url }}example">Example</a>
+		<a class="github" href="{{ site.repo }}">view on GitHub</a>
 	</div>
 
 	<div class="sl-container demo-section">
-		<div class="sl-col-12 demo-space">
-			<h1>{{ page.title }}</h1>
-			<p>{{ page.lead }} <a href="{{ site.repo }}">view on GitHub</a></p>
+		<div class="sl-col-8">
+			<div class="demo-space">
+				<h1>{{ page.title }}</h1>
+				<p>{{ page.lead }}</p>
+			</div>
+			{{ content }}
 		</div>
-		{{ content }}
+		<div class="sl-col-4">
+			<ul>
+				<li>
+					<p>Layout</p>
+					<ul>
+						<li><a href="{{ page.base_url }}grid">Grid</a></li>
+						<ul>
+							<li><a href="{{ page.base_url }}grid-col">Grid col</a></li>
+							<li><a href="{{ page.base_url }}grid-row">Grid row</a></li>
+							<li><a href="{{ page.base_url }}grid-example">Example</a></li>
+						</ul>
+
+					</ul>
+				</li>
+			</ul>
+
+		</div>
 	</div>
 
     <p></p>

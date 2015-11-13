@@ -13,6 +13,7 @@ h1, h2 { text-transform: capitalize; }
 	background-color:  teal;
 	padding: 0 10px;
 }
+.demo-pull-right { float: right; }
 .demo-nav a {
 	color: #fff;
 	display: table-cell;
