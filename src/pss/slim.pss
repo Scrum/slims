@@ -1,4 +1,4 @@
-@import "utils/_variable.pss";
-@import "utils/_mixin.pss";
+@import "utils/_variables.pss";
+@import "utils/_mixins.pss";
 
 @import "layout/_grid.pss";
