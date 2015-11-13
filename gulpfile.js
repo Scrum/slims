@@ -27,8 +27,8 @@ gulp.task('deploy', ['pcss', 'jekyll'] ,function() {
       .pipe(ghPages())
 });
 
-gulp.task('pcss', function() {
-    return gulp.src('./app/pcss/' + pkg.name + '.pcss')
+gulp.task('pss', function() {
+    return gulp.src('./app/pss/' + pkg.name + '.pss')
         .pipe(postcss([
             require('postcss-import')(),
             require('postcss-mixins')(),
