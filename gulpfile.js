@@ -1,21 +1,21 @@
 var gulp = require('gulp'),
-	postcss = require('gulp-postcss'),
+    postcss = require('gulp-postcss'),
     rename = require('gulp-rename'),
     ghPages = require('gulp-gh-pages'),
-	shell = require('gulp-shell')
+    shell = require('gulp-shell')
 
-	require('gulp-release-tasks')(gulp);
+    require('gulp-release-tasks')(gulp);
 
 var pkg = require('./package.json'),
-	slim_banner = [
-		'*',
-		'* Copyright (c) ' + new Date().getFullYear() + ' ' + pkg.author.name,
-		'* ' + pkg.name + ' - ' + pkg.description,
-		'* @version ' + pkg.version,
-		'* @link ' + pkg.homepage,
-		'* @license ' + pkg.license.type,
-		'*'
-		].join('\n');
+    slim_banner = [
+        '*',
+        '* Copyright (c) ' + new Date().getFullYear() + ' ' + pkg.author.name,
+        '* ' + pkg.name + ' - ' + pkg.description,
+        '* @version ' + pkg.version,
+        '* @link ' + pkg.homepage,
+        '* @license ' + pkg.license.type,
+        '*'
+        ].join('\n');
 
 gulp.task('jekyll', function() {
     return gulp.src('*.js', {read: false})
@@ -29,7 +29,7 @@ gulp.task('deploy', ['pcss', 'jekyll'] ,function() {
 
 gulp.task('pcss', function() {
     return gulp.src('./app/pcss/' + pkg.name + '.pcss')
-    	.pipe(postcss([
+        .pipe(postcss([
             require('postcss-import')(),
             require('postcss-mixins')(),
             require('postcss-for-variables')(),
@@ -37,10 +37,10 @@ gulp.task('pcss', function() {
             require('postcss-custom-properties')(),
             require('postcss-nested')(),
             require('postcss-calc')({ precision: 3 }),
-    		require('postcss-banner')({banner: slim_banner})
-    	]))
-    	.pipe(rename({ extname: '.css' }))
-    	.pipe(gulp.dest('./dist/css/'))
+            require('postcss-banner')({banner: slim_banner})
+        ]))
+        .pipe(rename({ extname: '.css' }))
+        .pipe(gulp.dest('./dist/css/'))
         .pipe(gulp.dest('./docs/dist/css/'))
 });
 
