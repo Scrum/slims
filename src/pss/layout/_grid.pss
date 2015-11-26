@@ -9,9 +9,6 @@
 
 /* row grid */
 .sl-container-row {
-	/* margin-top: -calc(var(--grid-gutter) / 2);
-	margin-bottom: -calc(var(--grid-gutter) / 2); */
-
 	> [class*="sl-row"]:first-child { padding-top: 0;}
 	> [class*="sl-row"]:last-child { padding-bottom: 0;}
 }
@@ -22,9 +19,6 @@
 }
 
 @for $i from 1 to var(--grid-row-count) {
-	/* .sl-row-offset-$i {
-		margin-top: calc( ( ( var(--grid-row-height) * $i ) / $i )   );
-	} */
 	* { height: inherit; }
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i)px;
@@ -34,14 +28,6 @@
 				margin-top: calc( (( $i *  var(--grid-row-height) ) / 12) * $k )px;
 			}
 		}
-		/* &.sl-vertical-center {
-			& > * {
-				line-height: calc(var(--grid-row-height) * $i);
-			}
-			& > [class*="sl-row"] {
-				line-height: calc((var(--grid-row-height) * $i) - var(--grid-gutter));
-			}
-		} */
 
 	}
 	.sl-row-$i {
