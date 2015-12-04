@@ -19,13 +19,12 @@
 }
 * { height: inherit; }
 @for $i from 1 to var(--grid-row-count) {
-	
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i)px;
 
-		@for $k from 1 to 12 {
+		@for $k from 1 to var(--grid-row-count) {
 			.sl-row-offset-$k {
-				margin-top: calc( (( $i *  var(--grid-row-height) ) / 12) * $k )px;
+				margin-top: calc( (( $i *  var(--grid-row-height) ) / var(--grid-row-count)) * $k )px;
 			}
 		}
 
