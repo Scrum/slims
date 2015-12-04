@@ -17,9 +17,9 @@
 	padding-top: calc(var(--grid-gutter) / 2);
 	padding-bottom: calc(var(--grid-gutter) / 2);
 }
-
+* { height: inherit; }
 @for $i from 1 to var(--grid-row-count) {
-	* { height: inherit; }
+	
 	.sl-container-row-$i {
 		height: calc(var(--grid-row-height) * $i)px;
 
