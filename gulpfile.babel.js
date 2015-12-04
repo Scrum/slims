@@ -31,7 +31,7 @@ gulp.task('pss', () => {
         .pipe(postcss([
             require('postcss-import')(),
             require('postcss-mixins')(),
-            require('postcss-for-variables')(),
+            require('postcss-at-rules-variables')(),
             require('postcss-for')(),
             require('postcss-custom-properties')(),
             require('postcss-nested')(),
