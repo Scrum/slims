@@ -32,8 +32,9 @@ gulp.task('pss', () => {
             require('postcss-import')(),
             require('postcss-mixins')(),
             require('postcss-at-rules-variables')(),
-            require('postcss-for')(),
             require('postcss-custom-properties')(),
+            require('postcss-for')(),
+            require('postcss-conditionals'),
             require('postcss-nested')(),
             require('postcss-calc')({ precision: 3 }),
             require('postcss-banner')({banner: slim_banner})
