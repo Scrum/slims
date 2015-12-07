@@ -2,7 +2,6 @@ import gulp from 'gulp';
 import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
-import shell from 'gulp-shell';
 import pkg from './package.json';
 
 require('gulp-release-tasks')(gulp);
