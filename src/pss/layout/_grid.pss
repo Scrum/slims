@@ -51,8 +51,10 @@
 }
 
 @for $i from 1 to var(--grid-col-count) {
-	.sl-col-offset-$i {
-		margin-left: calc( ( 100% / var(--grid-col-count) ) * $i );
+	@if($i != var(--grid-col-count)) {
+		.sl-col-offset-$i {
+			margin-left: calc( ( 100% / var(--grid-col-count) ) * $i );
+		}
 	}
 	.sl-col-$i {
 		width: calc( ( $i * 100% ) / var(--grid-col-count) );
