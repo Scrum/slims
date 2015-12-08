@@ -3,10 +3,12 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
+import cssnano from 'gulp-cssnano';
+import shell from 'gulp-shell';
 
 require('gulp-release-tasks')(gulp);
 
-let slim_banner = (
+const slim_banner = (
 `*
 * Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
 * ${pkg.name} - ${pkg.description}
@@ -39,6 +41,10 @@ gulp.task('pss', () => {
             require('postcss-banner')({banner: slim_banner})
         ]))
         .pipe(rename({ extname: '.css' }))
+        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./docs/dist/css/'))
+        .pipe(cssnano())
+        .pipe(rename({ extname: '.min.css' }))
         .pipe(gulp.dest('./dist/css/'))
         .pipe(gulp.dest('./docs/dist/css/'))
 });
