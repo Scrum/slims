@@ -1,7 +1,7 @@
 {
   "name": "Slim",
   "title": "Slim",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Vanilla CSS framework",
   "main": "dist/Slim.css",
   "scripts": {
