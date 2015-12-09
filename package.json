@@ -1,9 +1,9 @@
 {
-  "name": "Slim",
-  "title": "Slim",
+  "name": "slim",
+  "title": "slim",
   "version": "0.3.0",
   "description": "Vanilla CSS framework",
-  "main": "dist/Slim.css",
+  "main": "dist/slim.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,7 +34,6 @@
     "gulp-cssnano": "^2.0.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-postcss": "^6.0.0",
-    "gulp-release-tasks": "0.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.1",
     "postcss-at-rules-variables": "0.0.11",

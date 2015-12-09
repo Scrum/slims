@@ -6,8 +6,6 @@ import pkg from './package.json';
 import cssnano from 'gulp-cssnano';
 import shell from 'gulp-shell';
 
-require('gulp-release-tasks')(gulp);
-
 const slim_banner = (
 `*
 * Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
