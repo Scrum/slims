@@ -14,20 +14,20 @@
 }
 
 [class*="sl-row"] {
-	padding-top: calc(var(--grid-gutter) / 2);
-	padding-bottom: calc(var(--grid-gutter) / 2);
+	padding-top: calc(var(--grid-gutter) / 2)var(--grid-gutter-ext);
+	padding-bottom: calc(var(--grid-gutter) / 2)var(--grid-gutter-ext);
 }
 * { 
 	height: inherit; 
 }
 @for $i from 1 to var(--grid-row-count) {
 	.sl-container-row-$i {
-		height: calc(var(--grid-row-height) * $i)px;
+		height: calc(var(--grid-row-height) * $i)var(--grid-gutter-ext);
 
 		@for $k from 1 to var(--grid-row-count) {
 			@if($k != var(--grid-row-count)) {
 				.sl-row-offset-$k {
-					margin-top: calc( (( $i *  var(--grid-row-height) ) / var(--grid-row-count)) * $k )px;
+					margin-top: calc( (( $i *  var(--grid-row-height) ) / var(--grid-row-count)) * $k )var(--grid-gutter-ext);
 				}
 			}
 		}
@@ -40,14 +40,14 @@
 
 /* col grid */
 .sl-container-col {
-	margin-left: -calc( var(--grid-gutter) / 2);
-	margin-right: -calc( var(--grid-gutter) / 2);
+	margin-left: -calc( var(--grid-gutter) / 2)var(--grid-gutter-ext);
+	margin-right: -calc( var(--grid-gutter) / 2)var(--grid-gutter-ext);
 }
 
 [class*="sl-col"] {
 	float: left;
-	padding-left: calc( var(--grid-gutter) / 2);
-	padding-right: calc( var(--grid-gutter) / 2);
+	padding-left: calc( var(--grid-gutter) / 2)var(--grid-gutter-ext);
+	padding-right: calc( var(--grid-gutter) / 2)var(--grid-gutter-ext);
 }
 
 @for $i from 1 to var(--grid-col-count) {
