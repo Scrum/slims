@@ -2,7 +2,7 @@
 ![Bower version](https://img.shields.io/bower/v/slim.svg?style=flat-square)![GitHub issue](https://img.shields.io/github/issues/GitScrum/Slim.svg?style=flat-square)
 
 # Instalation
-## Bower
+### Bower
 ```console 
 $  bower install slim
 ```
