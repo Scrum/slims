@@ -1,9 +1,10 @@
 {
   "name": "slim",
+  "version": "0.4.0",
   "description": "Vanilla CSS framework",
   "main": "dist/slim.min.css",
   "authors": [
-    "GitScrum"
+    "Scrum"
   ],
   "license": {
     "type": "MIT",
