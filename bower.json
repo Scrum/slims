@@ -1,0 +1,27 @@
+{
+  "name": "slim",
+  "description": "Vanilla CSS framework",
+  "main": "dist/slim.min.css",
+  "authors": [
+    "GitScrum"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "keywords": [
+    "vanila",
+    "css",
+    "framework"
+  ],
+  "homepage": "https://github.com/GitScrum/Slim",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
