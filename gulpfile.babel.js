@@ -25,7 +25,14 @@ gulp.task('deploy', ['pss', 'jekyll'] ,() => {
       .pipe(ghPages())
 });
 
-gulp.task('pss', () => {
+gulp.task('psslint', function() {
+    return gulp.src('./src/pss/**/*.pss')
+        .pipe(postcss([
+            require('stylelint')()
+        ]))
+});
+
+gulp.task('pss', ['psslint'],() => {
     return gulp.src(`./src/pss/${pkg.name}.pss`)
         .pipe(postcss([
             require('postcss-import')(),
