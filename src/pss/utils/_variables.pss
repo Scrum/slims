@@ -1,13 +1,9 @@
 :root {
-
-	/* components grid */
-	--grid-gutter: 20;
-	--grid-gutter-ext: px;
-	--grid-col-count: 12;
-	--grid-row-count: 12;
-	--grid-row-height: 40;
-
-	/* utils helpers */
-	--space-gutter: 20;
-	--space-gutter-ext: px;
+  --grid-gutter: 20;
+  --grid-gutter-ext: px;
+  --grid-col-count: 12;
+  --grid-row-count: 12;
+  --grid-row-height: 40;
+  --space-gutter: 20;
+  --space-gutter-ext: px;
 }

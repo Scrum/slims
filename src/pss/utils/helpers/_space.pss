@@ -1,4 +1,4 @@
-.space-xs { margin-bottom: calc( var(--space-gutter) / 4 )var(--space-gutter-ext); }
-.space-sm { margin-bottom: calc( var(--space-gutter) / 2 )var(--space-gutter-ext); }
-.space-md { margin-bottom: calc( var(--space-gutter) )var(--space-gutter-ext); }
-.space-lg { margin-bottom: calc( var(--space-gutter) * 2 )var(--space-gutter-ext); }
+.space-xs { margin-bottom: calc(var(--space-gutter) / 4 * (1var(--space-gutter-ext))); }
+.space-sm { margin-bottom: calc(var(--space-gutter) / 2 * (1var(--space-gutter-ext))); }
+.space-md { margin-bottom: calc(var(--space-gutter) * (1var(--space-gutter-ext))); }
+.space-lg { margin-bottom: calc(var(--space-gutter) * 2 * (1var(--space-gutter-ext))); }
