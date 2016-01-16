@@ -1,6 +1,5 @@
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
-
 [class*="sl-container"] { @mixin clearfix; }
 
 .container-row {
