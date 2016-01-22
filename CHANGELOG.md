@@ -1,6 +1,12 @@
-## [0.4.3] - 16-01-2016
+## [0.4.3] - 22-01-2016
+### Fixed 
+- Resolved path to dist css
+
 ### Change
-- update postcss-mixin to 3.*
+- update postcss-mixin to 4.0.0
+- update stylelint to 4.1.0
+- update stylelint-config-suitcss to 3.0.0
+- update postcss-at-rules-variables to 0.0.14
 
 ## [0.4.2] - 12-12-2015
 ### Change
