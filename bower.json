@@ -1,7 +1,7 @@
 {
   "name": "slim",
   "description": "Vanilla CSS framework",
-  "main": "dist/slim.min.css",
+  "main": "dist/css/slim.min.css",
   "authors": [
     "Scrum"
   ],
