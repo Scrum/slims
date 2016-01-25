@@ -1,3 +1,12 @@
+## [0.4.4] - 25-01-2016
+### Added
+- Added #5, postcss-sort
+- Adeed #23, postcss-browser-report
+
+### Fixed 
+- Fixed #26, Remove parent inheritans
+- Fixed demo page, add parent inheritans
+
 ## [0.4.3] - 22-01-2016
 ### Fixed 
 - Resolved path to dist css
