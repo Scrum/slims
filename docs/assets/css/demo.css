@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,300italic,300,500,500italic,700,700italic);
+* {height: inherit;}
 html, body { margin: 0; padding: 0; border: 0;}
 body {color: #212121; font: 100% "Robot Mono", sans-serif;}
 a {color: #607d8b;text-decoration: none;}
