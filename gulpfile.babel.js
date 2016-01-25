@@ -46,7 +46,7 @@ gulp.task('pss', ['psslint'],() => {
             require('postcss-class-prefix')('sl-'),
             require('postcss-sorting')(),
             require('postcss-banner')({banner: slim_banner}),
-            require('postcss-browser-reporter')
+            //require('postcss-browser-reporter')()
         ]))
         .pipe(rename({ extname: '.css' }))
         .pipe(gulp.dest('./dist/css/'))
