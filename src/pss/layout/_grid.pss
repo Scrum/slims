@@ -1,6 +1,7 @@
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
-[class*="sl-container"] { @mixin clearfix; }
+.container-row,
+.container-col { @mixin clearfix; }
 
 .container-row {
   > [class*="l-row"]:last-child { padding-bottom: 0; }
@@ -18,8 +19,8 @@
 
     @for $k from 1 to var(--grid-row-count) {
       @if($k != var(--grid-row-count)) {
-        .r-offset-$k {
-          rgin-top: c alc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k * (1var(--grid-gutter-ext)));
+        .row-offset-$k {
+          rgin-top: calc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k * (1var(--grid-gutter-ext)));
         }
       }
     }

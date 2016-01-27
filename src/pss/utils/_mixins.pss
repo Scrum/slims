@@ -3,9 +3,9 @@
     clear: both;
   }
 
-  &:after,
+  &:after, 
   &:before {
-    content: "";
+    content: '';
     display: table;
   }
 }
