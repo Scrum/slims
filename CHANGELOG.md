@@ -1,3 +1,7 @@
+## [0.4.5] - 27-01-2016
+### Fixed
+- Fixed #30, error in grid css
+
 ## [0.4.4] - 25-01-2016
 ### Added
 - Added #5, postcss-sort
