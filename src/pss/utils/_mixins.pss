@@ -3,7 +3,7 @@
     clear: both;
   }
 
-  &:after, 
+  &:after,
   &:before {
     content: '';
     display: table;
