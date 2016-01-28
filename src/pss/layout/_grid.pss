@@ -1,5 +1,6 @@
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
+
 .container-row,
 .container-col { clear: fix; }
 
