@@ -46,7 +46,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-extend": "^1.0.0",
     "postcss-for": "^2.0.0",
-    "postcss-import": "^7.0.0",
+    "postcss-import": "^8.0.2",
     "postcss-mixins": "^4.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.1.0",
