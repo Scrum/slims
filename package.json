@@ -52,6 +52,6 @@
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.1.0",
     "stylelint": "^4.1.0",
-    "stylelint-config-suitcss": "^3.0.0"
+    "stylelint-config-standard": "^3.0.0"
   }
 }
