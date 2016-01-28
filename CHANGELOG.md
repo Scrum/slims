@@ -1,3 +1,12 @@
+## [0.4.6] - 28-01-2016
+### Change
+- Update #30, Update devDep
+- Update #31, change used mixin clear fix to plugin postcss-clearfix in processing
+- Change #38, change witch stylelint-config-suitcss to stylelint-config-standard
+
+### Fixed
+- Fixed #12, resolve report errors from stylelint
+
 ## [0.4.5] - 27-01-2016
 ### Fixed
 - Fixed #30, error in grid css
