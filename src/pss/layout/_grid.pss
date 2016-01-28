@@ -1,7 +1,7 @@
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
 .container-row,
-.container-col { @mixin clearfix; }
+.container-col { clear: fix; }
 
 .container-row {
   > [class*="l-row"]:last-child { padding-bottom: 0; }

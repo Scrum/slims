@@ -43,6 +43,7 @@ gulp.task('pss', ['psslint'],() => {
             require('postcss-conditionals'),
             require('postcss-nested')(),
             require('postcss-calc')({ precision: 3 }),
+            require('postcss-clearfix')(),
             require('postcss-class-prefix')('sl-'),
             require('postcss-sorting')(),
             require('postcss-banner')({banner: slim_banner}),

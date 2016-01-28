@@ -41,6 +41,7 @@
     "postcss-browser-reporter": "^0.4.0",
     "postcss-calc": "^5.0.0",
     "postcss-class-prefix": "^0.3.0",
+    "postcss-clearfix": "^0.2.0",
     "postcss-conditionals": "^2.0.0",
     "postcss-cssnext": "^2.1.0",
     "postcss-custom-properties": "^5.0.0",
