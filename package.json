@@ -1,7 +1,7 @@
 {
   "name": "slim",
   "title": "slim",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Vanilla CSS framework",
   "main": "dist/slim.min.css",
   "scripts": {
@@ -41,16 +41,17 @@
     "postcss-browser-reporter": "^0.4.0",
     "postcss-calc": "^5.0.0",
     "postcss-class-prefix": "^0.3.0",
+    "postcss-clearfix": "^0.2.0",
     "postcss-conditionals": "^2.0.0",
     "postcss-cssnext": "^2.1.0",
     "postcss-custom-properties": "^5.0.0",
     "postcss-extend": "^1.0.0",
     "postcss-for": "^2.0.0",
-    "postcss-import": "^7.0.0",
+    "postcss-import": "^8.0.2",
     "postcss-mixins": "^4.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.1.0",
     "stylelint": "^4.1.0",
-    "stylelint-config-suitcss": "^3.0.0"
+    "stylelint-config-standard": "^3.0.0"
   }
 }
