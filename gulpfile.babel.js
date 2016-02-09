@@ -16,48 +16,60 @@ const slim_banner = (
 *`);
 
 gulp.task('jekyll', () => {
-    return gulp.src('*.js', {read: false})
-      .pipe(shell('jekyll build'))
+	return gulp.src('*.js', {read: false})
+	  .pipe(shell('jekyll build'))
 });
 
 gulp.task('deploy', ['pss', 'jekyll'] ,() => {
-    return gulp.src('./_gh-pages/**/*')
-      .pipe(ghPages())
+	return gulp.src('./_gh-pages/**/*')
+	  .pipe(ghPages())
 });
 
 gulp.task('psslint', function() {
-    return gulp.src('./src/pss/**/*.pss')
-        .pipe(postcss([
-            require('stylelint')()
-        ]))
+	return gulp.src('./src/pss/**/*.pss')
+		.pipe(postcss([
+			require('stylelint')()
+		]))
+});
+
+gulp.task('csssupport', function() {
+	return gulp.src('./dist/css/**/*.css')
+		.pipe(postcss([
+			require('doiuse')({
+				browsers: [
+					'ie >= 10',
+					'last 2 versions'
+				]
+			})
+		]))
 });
 
 gulp.task('pss', ['psslint'],() => {
-    return gulp.src(`./src/pss/${pkg.name}.pss`)
-        .pipe(postcss([
-            require('postcss-import')(),
-            require('postcss-mixins')(),
-            require('postcss-at-rules-variables')(),
-            require('postcss-custom-properties')(),
-            require('postcss-for')(),
-            require('postcss-conditionals'),
-            require('postcss-nested')(),
-            require('postcss-calc')({ precision: 3 }),
-            require('postcss-clearfix')(),
-            require('postcss-class-prefix')('sl-'),
-            require('postcss-sorting')(),
-            require('postcss-banner')({banner: slim_banner}),
-            require('postcss-browser-reporter')()
-        ]))
-        .pipe(rename({ extname: '.css' }))
-        .pipe(gulp.dest('./dist/css/'))
-        .pipe(gulp.dest('./docs/dist/css/'))
-        .pipe(cssnano())
-        .pipe(rename({ extname: '.min.css' }))
-        .pipe(gulp.dest('./dist/css/'))
-        .pipe(gulp.dest('./docs/dist/css/'))
+	return gulp.src(`./src/pss/${pkg.name}.pss`)
+		.pipe(postcss([
+			require('postcss-import')(),
+			require('postcss-mixins')(),
+			require('postcss-at-rules-variables')(),
+			require('postcss-custom-properties')(),
+			require('postcss-for')(),
+			require('postcss-conditionals'),
+			require('postcss-nested')(),
+			require('postcss-calc')({ precision: 3 }),
+			require('postcss-clearfix')(),
+			require('postcss-class-prefix')('sl-'),
+			require('postcss-sorting')(),
+			require('postcss-banner')({banner: slim_banner}),
+			require('postcss-browser-reporter')()
+		]))
+		.pipe(rename({ extname: '.css' }))
+		.pipe(gulp.dest('./dist/css/'))
+		.pipe(gulp.dest('./docs/dist/css/'))
+		.pipe(cssnano())
+		.pipe(rename({ extname: '.min.css' }))
+		.pipe(gulp.dest('./dist/css/'))
+		.pipe(gulp.dest('./docs/dist/css/'))
 });
 
 
 
-gulp.task('default',['pss']);
+gulp.task('default',['pss', 'csssupport']);
