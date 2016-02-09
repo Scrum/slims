@@ -44,7 +44,7 @@ gulp.task('csssupport', function() {
 		]))
 });
 
-gulp.task('pss', ['psslint'],() => {
+gulp.task('pss', ['test'],() => {
 	return gulp.src(`./src/pss/${pkg.name}.pss`)
 		.pipe(postcss([
 			require('postcss-import')(),
@@ -72,4 +72,5 @@ gulp.task('pss', ['psslint'],() => {
 
 
 
-gulp.task('default',['pss', 'csssupport']);
+gulp.task('default',['pss']);
+gulp.task('test',['psslint', 'csssupport']);
