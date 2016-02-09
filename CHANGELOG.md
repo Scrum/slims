@@ -1,3 +1,12 @@
+## [0.4.7] - 09-02-2016
+### Added 
+- Added #34, lint browser support
+- Added task test p(c)ss
+
+### Fixed
+- Fixed #47, uncomment browser reporter
+- Fixed #40, change banner version
+
 ## [0.4.6] - 28-01-2016
 ### Change
 - Update #30, Update devDep
