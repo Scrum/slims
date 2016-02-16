@@ -1,3 +1,15 @@
+## [0.4.8] - 16-02-2016
+### Added 
+- sublime config in gitignore
+- Added #42, babel config to package.json
+
+### Change
+- Update #52, update demo page example
+- Change #43, babel core to register
+
+### Removed
+- Removed #42, .babelrc, rmove config to package.json
+
 ## [0.4.7] - 09-02-2016
 ### Added 
 - Added #34, lint browser support
