@@ -3,3 +3,4 @@ _gh-pages/
 npm-debug.log
 node_modules/
 tests/
+*.sublime*
