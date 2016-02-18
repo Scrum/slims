@@ -1,4 +1,11 @@
 ## [0.4.8] - 16-02-2016
+### Fixed
+- Fixed #55, reinstall modules
+
+### Change
+- Update #45, update devDep
+
+## [0.4.8] - 16-02-2016
 ### Added 
 - sublime config in gitignore
 - Added #42, babel config to package.json
