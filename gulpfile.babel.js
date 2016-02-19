@@ -9,7 +9,7 @@ import shell from 'gulp-shell';
 const slim_banner = (
 `*
 * Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
-* ${pkg.name} - ${pkg.description}
+* ${pkg.title} - ${pkg.description}
 * @version ${pkg.version}
 * @link ${pkg.homepage}
 * @license ${pkg.license.type}
@@ -45,7 +45,7 @@ gulp.task('csssupport', function() {
 });
 
 gulp.task('pss', ['test'],() => {
-	return gulp.src(`./src/pss/${pkg.name}.pss`)
+	return gulp.src(`./src/pss/${pkg.title}.pss`)
 		.pipe(postcss([
 			require('postcss-easy-import')({
 				prefix: '_',
