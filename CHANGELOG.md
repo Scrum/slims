@@ -1,6 +1,8 @@
-## [0.4.9] - 18-02-2016
+## [0.4.9] - 19-02-2016
 ### Added
+- Added #48, added slim to npm
 - Added #36, [postcss-easy-import](https://github.com/TrySound/postcss-easy-import)
+- Added dot config
 
 ### Fixed
 - Fixed #55, reinstall modules
