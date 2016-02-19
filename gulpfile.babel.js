@@ -47,7 +47,10 @@ gulp.task('csssupport', function() {
 gulp.task('pss', ['test'],() => {
 	return gulp.src(`./src/pss/${pkg.name}.pss`)
 		.pipe(postcss([
-			require('postcss-import')(),
+			require('postcss-easy-import')({
+				prefix: '_',
+				extensions: '.pss'
+			}),
 			require('postcss-mixins')(),
 			require('postcss-at-rules-variables')(),
 			require('postcss-custom-properties')(),

@@ -1,4 +1,7 @@
-## [0.4.8] - 16-02-2016
+## [0.4.9] - 18-02-2016
+### Added
+- Added #36, [postcss-easy-import](https://github.com/TrySound/postcss-easy-import)
+
 ### Fixed
 - Fixed #55, reinstall modules
 
