@@ -46,6 +46,7 @@
     "postcss-conditionals": "^2.0.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-custom-properties": "^5.0.0",
+    "postcss-devtools": "^1.0.0",
     "postcss-easy-import": "^1.0.1",
     "postcss-extend": "^1.0.1",
     "postcss-for": "^2.0.1",
