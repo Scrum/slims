@@ -1,3 +1,11 @@
+## [0.4.10] - 20-02-2016
+### Added
+- Added #41, postcss-devtools
+
+### Change
+- Change #62, project name to slims
+- Update pkg postcss-banner to 1.2.0
+
 ## [0.4.9] - 19-02-2016
 ### Added
 - Added #48, added slim to npm
