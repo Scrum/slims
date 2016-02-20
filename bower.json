@@ -1,7 +1,7 @@
 {
-  "name": "slim",
+  "name": "slims",
   "description": "Vanilla CSS framework",
-  "main": "dist/css/slim.min.css",
+  "main": "dist/css/slims.min.css",
   "authors": [
     "Scrum"
   ],
@@ -14,7 +14,7 @@
     "css",
     "framework"
   ],
-  "homepage": "https://github.com/GitScrum/Slim",
+  "homepage": "https://github.com/GitScrum/Slims",
   "moduleType": [],
   "ignore": [
     "**/.*",
