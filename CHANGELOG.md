@@ -1,10 +1,14 @@
-## [0.4.10] - 20-02-2016
+## [0.4.10] - 24-02-2016
 ### Added
 - Added #41, postcss-devtools
 
 ### Change
 - Change #62, project name to slims
 - Update pkg postcss-banner to 1.2.0
+- Update project name in demo
+
+### Fixed
+- Fixed #64, resolved path for github witch demo page
 
 ## [0.4.9] - 19-02-2016
 ### Added

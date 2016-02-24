@@ -4,6 +4,7 @@ import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
 import cssnano from 'gulp-cssnano';
+import csso from 'gulp-csso';
 import shell from 'gulp-shell';
 
 const slim_banner = (
@@ -69,6 +70,7 @@ gulp.task('pss', ['test'],() => {
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
 		.pipe(cssnano())
+		.pipe(csso())
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
