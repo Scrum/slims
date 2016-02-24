@@ -15,5 +15,5 @@ encoding:          UTF-8
 url:               http://localhost:9001
 
 # Custom vars
-current_version:   0.2.0
-repo:              https://github.com/gitscrum/slims-grid
+current_version:   0.4.10
+repo:              https://github.com/gitscrum/slims
