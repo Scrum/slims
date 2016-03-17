@@ -1,3 +1,20 @@
+## [0.4.11] - 17-03-2016
+### Added
+- Added #75, config stylelint in package.json
+- Added #74, now using gulp-cli locals in place of globals,
+- Added #67, feature `space-reset` class
+- Added runer build - run default task
+- Added runer deploy - run gulp deploy
+
+### Change
+- Change #77, csso to postcss-csso
+- Update #71, devDep
+- Update css, apple updade clearfix
+
+### Removed
+- Remove #78, cssnano
+- Remove #75, .stylelintrc
+
 ## [0.4.10] - 24-02-2016
 ### Added
 - Added #41, postcss-devtools
