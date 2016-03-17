@@ -6,7 +6,8 @@
   "main": "dist/slims.min.css",
   "scripts": {
     "build": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
