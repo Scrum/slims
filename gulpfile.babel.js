@@ -3,7 +3,6 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
-import csso from 'gulp-csso';
 import shell from 'gulp-shell';
 
 const slim_banner = (
@@ -68,13 +67,14 @@ gulp.task('pss', ['test'],() => {
 		.pipe(rename({ extname: '.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
-		.pipe(csso())
+		.pipe(postcss([
+			require('postcss-devtools')(),
+			require('postcss-csso')()
+		]))
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
 });
-
-
 
 gulp.task('default',['pss']);
 gulp.task('test',['psslint', 'csssupport']);
