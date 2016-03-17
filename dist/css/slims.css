@@ -9,6 +9,7 @@
 .sl-space-sm { margin-bottom: 10px; }
 .sl-space-md { margin-bottom: 20px; }
 .sl-space-lg { margin-bottom: 40px; }
+.sl-space-reset { margin-bottom: 0 !important; }
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
 .sl-container-row:after,
