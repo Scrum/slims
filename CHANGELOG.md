@@ -1,3 +1,10 @@
+## [0.4.12] - 17-03-2016
+### Added 
+- Added runer test - run gulp test
+
+### Fixed
+- Fixed #81, invalid property
+
 ## [0.4.11] - 17-03-2016
 ### Added
 - Added #75, config stylelint in package.json
