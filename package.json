@@ -5,7 +5,7 @@
   "description": "Vanilla CSS framework",
   "main": "dist/slims.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "babel-register": "^6.7.2",
     "doiuse": "^2.3.0",
     "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
