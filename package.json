@@ -5,7 +5,8 @@
   "description": "Vanilla CSS framework",
   "main": "dist/slims.min.css",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
