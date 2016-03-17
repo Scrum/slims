@@ -1,7 +1,7 @@
 /**
 * Copyright (c) 2016 GitScrum
 * slims - Vanilla CSS framework
-* @version 0.4.10
+* @version 0.4.11
 * @link https://github.com/GitScrum/slim
 * @license MIT
 **/
@@ -9,10 +9,11 @@
 .sl-space-sm { margin-bottom: 10px; }
 .sl-space-md { margin-bottom: 20px; }
 .sl-space-lg { margin-bottom: 40px; }
+.sl-space-reset { margin-bottom: 0 !important; }
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
 .sl-container-row:after,
-.sl-container-col:after { display: table; clear: both; content: ''; }
+.sl-container-col:after { display: block; clear: both; content: ''; }
 .sl-container-row > [class*="l-row"]:last-child { padding-bottom: 0; }
 .sl-container-row > [class*="sl-row"]:first-child { padding-top: 0; }
 [class*="sl-row"] {
