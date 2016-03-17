@@ -3,7 +3,6 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
-import cssnano from 'gulp-cssnano';
 import csso from 'gulp-csso';
 import shell from 'gulp-shell';
 
@@ -69,7 +68,6 @@ gulp.task('pss', ['test'],() => {
 		.pipe(rename({ extname: '.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
-		.pipe(cssnano())
 		.pipe(csso())
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(gulp.dest('./dist/css/'))
