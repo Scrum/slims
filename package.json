@@ -1,12 +1,13 @@
 {
   "name": "slims",
   "title": "slims",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "description": "Vanilla CSS framework",
   "main": "dist/slims.min.css",
   "scripts": {
     "build": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
