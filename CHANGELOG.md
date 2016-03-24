@@ -1,3 +1,20 @@
+## [0.4.13] - 23-03-2016
+### Added
+- Added #85, normalize css
+- Added #7, attribute selector prefix
+
+### Change
+- Update demo styles
+- Update devDep
+- Change es2015 to node5
+
+###
+- Fixed #83, resolve path to slims.css
+
+## [0.4.12] - 17-03-2016
+### Fixed
+- Fixed #81, invalid property rgin-top
+
 ## [0.4.11] - 17-03-2016
 ### Added
 - Added #75, config stylelint in package.json
