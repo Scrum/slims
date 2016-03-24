@@ -4,6 +4,7 @@ import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
 import shell from 'gulp-shell';
+import cssValidator from 'gulp-css-validator';
 
 const slim_banner = (
 `*
@@ -66,6 +67,7 @@ gulp.task('pss', ['test'],() => {
 			require('postcss-banner')({banner: slim_banner}),
 			require('postcss-browser-reporter')()
 		]))
+		.pipe(cssValidator())
 		.pipe(rename({ extname: '.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
