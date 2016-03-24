@@ -1,7 +1,10 @@
-## [0.4.13] - 23-03-2016
+## [0.4.13] - 24-03-2016
 ### Added
 - Added #85, normalize css
 - Added #7, attribute selector prefix
+- Added #87, postcss initial for reset property
+- Added example page for space helper
+- Added #84, css validator
 
 ### Change
 - Update demo styles
@@ -10,6 +13,8 @@
 
 ###
 - Fixed #83, resolve path to slims.css
+- Fixed export default for require
+- Fixed css validator error report
 
 ## [0.4.12] - 17-03-2016
 ### Fixed
