@@ -24,14 +24,14 @@ gulp.task('deploy', ['pss', 'jekyll'] ,() => {
 	  .pipe(ghPages())
 });
 
-gulp.task('psslint', function() {
+gulp.task('psslint', () => {
 	return gulp.src('./src/pss/**/*.pss')
 		.pipe(postcss([
 			require('stylelint')()
 		]))
 });
 
-gulp.task('csssupport', function() {
+gulp.task('csssupport', () => {
 	return gulp.src('./dist/css/**/*.css')
 		.pipe(postcss([
 			require('doiuse')({
@@ -60,6 +60,7 @@ gulp.task('pss', ['test'],() => {
 			require('postcss-calc')({ precision: 3 }),
 			require('postcss-clearfix')(),
 			require('postcss-class-prefix')('sl-'),
+			require('postcss-attribute-selector-prefix')({prefix: 'sl-', filter: ['class']}),
 			require('postcss-sorting')(),
 			require('postcss-banner')({banner: slim_banner}),
 			require('postcss-browser-reporter')()
