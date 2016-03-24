@@ -17,6 +17,9 @@
 - Fixed css validator error report
 
 ## [0.4.12] - 17-03-2016
+### Added 
+- Added runer test - run gulp test
+
 ### Fixed
 - Fixed #81, invalid property rgin-top
 
