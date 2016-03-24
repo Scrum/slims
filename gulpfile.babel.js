@@ -59,6 +59,7 @@ gulp.task('pss', ['test'],() => {
 			require('postcss-nested')(),
 			require('postcss-calc')({ precision: 3 }),
 			require('postcss-clearfix')(),
+			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),
 			require('postcss-attribute-selector-prefix').default({prefix: 'sl-', filter: ['class']}),
 			require('postcss-sorting')(),
