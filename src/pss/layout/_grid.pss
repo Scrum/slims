@@ -1,15 +1,15 @@
-[class*="sl-col"],
-[class*="sl-row"] { box-sizing: border-box; }
+[class*="col"],
+[class*="row"] { box-sizing: border-box; }
 
 .container-row,
 .container-col { clear: fix; }
 
 .container-row {
-  > [class*="l-row"]:last-child { padding-bottom: 0; }
-  > [class*="sl-row"]:first-child { padding-top: 0; }
+  > [class*="row"]:last-child { padding-bottom: 0; }
+  > [class*="row"]:first-child { padding-top: 0; }
 }
 
-[class*="sl-row"] {
+[class*="row"] {
   padding-bottom: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
   padding-top: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
 }
@@ -21,7 +21,7 @@
     @for $k from 1 to var(--grid-row-count) {
       @if($k != var(--grid-row-count)) {
         .row-offset-$k {
-          rgin-top: calc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k * (1var(--grid-gutter-ext)));
+          margin-top: calc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k * (1var(--grid-gutter-ext)));
         }
       }
     }
@@ -37,7 +37,7 @@
   margin-right: -calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
 }
 
-[class*="sl-col"] {
+[class*="col"] {
   float: left;
   padding-left: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
   padding-right: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));

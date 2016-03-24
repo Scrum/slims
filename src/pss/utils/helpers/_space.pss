@@ -2,4 +2,4 @@
 .space-sm { margin-bottom: calc(var(--space-gutter) / 2 * (1var(--space-gutter-ext))); }
 .space-md { margin-bottom: calc(var(--space-gutter) * (1var(--space-gutter-ext))); }
 .space-lg { margin-bottom: calc(var(--space-gutter) * 2 * (1var(--space-gutter-ext))); }
-.space-reset { margin-bottom: 0 !important; }
+.space-reset { margin-bottom: initial; }

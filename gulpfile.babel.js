@@ -4,6 +4,7 @@ import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
 import shell from 'gulp-shell';
+import cssValidator from 'gulp-css-validator';
 
 const slim_banner = (
 `*
@@ -24,14 +25,14 @@ gulp.task('deploy', ['pss', 'jekyll'] ,() => {
 	  .pipe(ghPages())
 });
 
-gulp.task('psslint', function() {
+gulp.task('psslint', () => {
 	return gulp.src('./src/pss/**/*.pss')
 		.pipe(postcss([
 			require('stylelint')()
 		]))
 });
 
-gulp.task('csssupport', function() {
+gulp.task('csssupport', () => {
 	return gulp.src('./dist/css/**/*.css')
 		.pipe(postcss([
 			require('doiuse')({
@@ -52,18 +53,21 @@ gulp.task('pss', ['test'],() => {
 				extensions: '.pss'
 			}),
 			require('postcss-mixins')(),
-			require('postcss-at-rules-variables')(),
+			require('postcss-at-rules-variables').default(),
 			require('postcss-custom-properties')(),
 			require('postcss-for')(),
 			require('postcss-conditionals'),
 			require('postcss-nested')(),
 			require('postcss-calc')({ precision: 3 }),
 			require('postcss-clearfix')(),
+			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),
+			require('postcss-attribute-selector-prefix').default({prefix: 'sl-', filter: ['class']}),
 			require('postcss-sorting')(),
 			require('postcss-banner')({banner: slim_banner}),
 			require('postcss-browser-reporter')()
 		]))
+		.pipe(cssValidator())
 		.pipe(rename({ extname: '.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
