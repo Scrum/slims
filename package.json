@@ -49,7 +49,6 @@
     "postcss-class-prefix": "^0.3.0",
     "postcss-clearfix": "^1.0.0",
     "postcss-conditionals": "^2.0.2",
-    "postcss-cssnext": "^2.5.2",
     "postcss-csso": "^1.1.0",
     "postcss-custom-properties": "^5.0.0",
     "postcss-devtools": "^1.0.0",
