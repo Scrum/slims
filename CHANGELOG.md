@@ -1,3 +1,16 @@
+## [0.4.14] - 08-04-2016
+### Added
+- Added #97, updtr, now run task update
+
+### Change
+- Update #96, devDep, dep
+- Update #93, editorconfig
+
+### Remove
+- Remove defined-mixin clearfix, now using postcss-clearfix plugin
+- Remove import mixins, not used now
+- Remove #90, postcss-cssnext, not using more
+
 ## [0.4.13] - 24-03-2016
 ### Added
 - Added #85, normalize css
@@ -22,6 +35,7 @@
 
 ### Fixed
 - Fixed #81, invalid property rgin-top
+
 
 ## [0.4.11] - 17-03-2016
 ### Added
