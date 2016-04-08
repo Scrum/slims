@@ -7,7 +7,8 @@
   "scripts": {
     "test": "gulp test",
     "build": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "update": "updtr"
   },
   "repository": {
     "type": "git",
@@ -60,7 +61,8 @@
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.2.3",
     "stylelint": "^5.3.0",
-    "stylelint-config-standard": "^5.0.0"
+    "stylelint-config-standard": "^5.0.0",
+    "updtr": "^0.1.10"
   },
   "babel": {
     "presets": [
