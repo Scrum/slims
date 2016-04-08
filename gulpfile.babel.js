@@ -53,7 +53,7 @@ gulp.task('pss', ['test'],() => {
 				extensions: '.pss'
 			}),
 			require('postcss-mixins')(),
-			require('postcss-at-rules-variables').default(),
+			require('postcss-at-rules-variables')(),
 			require('postcss-custom-properties')(),
 			require('postcss-for')(),
 			require('postcss-conditionals'),
@@ -62,7 +62,7 @@ gulp.task('pss', ['test'],() => {
 			require('postcss-clearfix')(),
 			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),
-			require('postcss-attribute-selector-prefix').default({prefix: 'sl-', filter: ['class']}),
+			require('postcss-attribute-selector-prefix')({prefix: 'sl-', filter: ['class']}),
 			require('postcss-sorting')(),
 			require('postcss-banner')({banner: slim_banner}),
 			require('postcss-browser-reporter')()
