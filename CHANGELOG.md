@@ -1,3 +1,11 @@
+## [0.4.15] - 25-04-2016
+### Change
+- Update #73, migrate to gulp 4
+- Update #105, devDep
+
+### Fixed
+- Fixed #101, bug witch incorrect round precentage
+
 ## [0.4.14] - 08-04-2016
 ### Added
 - Added #97, updtr, now run task update

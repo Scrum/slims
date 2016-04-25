@@ -28,7 +28,7 @@
   }
 
   .row-$i {
-    height: calc(($i * 100%) / var(--grid-col-count));
+    height: calc((100% / var(--grid-col-count)) * $i);
   }
 }
 
@@ -51,6 +51,6 @@
   }
 
   .col-$i {
-    width: calc(($i * 100%) / var(--grid-col-count));
+    width: calc((100% / var(--grid-col-count)) * $i);
   }
 }

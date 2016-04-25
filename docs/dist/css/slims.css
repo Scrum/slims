@@ -1,10 +1,10 @@
 /**
-* Copyright (c) 2016 GitScrum
-* slims - Vanilla CSS framework
-* @version 0.4.14
-* @link https://github.com/GitScrum/slim
-* @license MIT
-**/
+	* Copyright (c) 2016 GitScrum
+	* slims - Vanilla CSS framework
+	* @version 0.4.15
+	* @link https://github.com/GitScrum/slim
+	* @license MIT
+	**/
 .sl-space-xs { margin-bottom: 5px; }
 .sl-space-sm { margin-bottom: 10px; }
 .sl-space-md { margin-bottom: 20px; }
@@ -45,7 +45,7 @@
 .sl-container-row-2 .sl-row-offset-9 { margin-top: 60.003px; }
 .sl-container-row-2 .sl-row-offset-10 { margin-top: 66.67px; }
 .sl-container-row-2 .sl-row-offset-11 { margin-top: 73.337px; }
-.sl-row-2 { height: 16.667%; }
+.sl-row-2 { height: 16.666%; }
 .sl-container-row-3 { height: 120px; }
 .sl-container-row-3 .sl-row-offset-1 { margin-top: 10px; }
 .sl-container-row-3 .sl-row-offset-2 { margin-top: 20px; }
@@ -58,7 +58,7 @@
 .sl-container-row-3 .sl-row-offset-9 { margin-top: 90px; }
 .sl-container-row-3 .sl-row-offset-10 { margin-top: 100px; }
 .sl-container-row-3 .sl-row-offset-11 { margin-top: 110px; }
-.sl-row-3 { height: 25%; }
+.sl-row-3 { height: 24.999%; }
 .sl-container-row-4 { height: 160px; }
 .sl-container-row-4 .sl-row-offset-1 { margin-top: 13.333px; }
 .sl-container-row-4 .sl-row-offset-2 { margin-top: 26.666px; }
@@ -71,7 +71,7 @@
 .sl-container-row-4 .sl-row-offset-9 { margin-top: 119.997px; }
 .sl-container-row-4 .sl-row-offset-10 { margin-top: 133.33px; }
 .sl-container-row-4 .sl-row-offset-11 { margin-top: 146.663px; }
-.sl-row-4 { height: 33.333%; }
+.sl-row-4 { height: 33.332%; }
 .sl-container-row-5 { height: 200px; }
 .sl-container-row-5 .sl-row-offset-1 { margin-top: 16.667px; }
 .sl-container-row-5 .sl-row-offset-2 { margin-top: 33.334px; }
@@ -84,7 +84,7 @@
 .sl-container-row-5 .sl-row-offset-9 { margin-top: 150.003px; }
 .sl-container-row-5 .sl-row-offset-10 { margin-top: 166.67px; }
 .sl-container-row-5 .sl-row-offset-11 { margin-top: 183.337px; }
-.sl-row-5 { height: 41.667%; }
+.sl-row-5 { height: 41.665%; }
 .sl-container-row-6 { height: 240px; }
 .sl-container-row-6 .sl-row-offset-1 { margin-top: 20px; }
 .sl-container-row-6 .sl-row-offset-2 { margin-top: 40px; }
@@ -97,7 +97,7 @@
 .sl-container-row-6 .sl-row-offset-9 { margin-top: 180px; }
 .sl-container-row-6 .sl-row-offset-10 { margin-top: 200px; }
 .sl-container-row-6 .sl-row-offset-11 { margin-top: 220px; }
-.sl-row-6 { height: 50%; }
+.sl-row-6 { height: 49.998%; }
 .sl-container-row-7 { height: 280px; }
 .sl-container-row-7 .sl-row-offset-1 { margin-top: 23.333px; }
 .sl-container-row-7 .sl-row-offset-2 { margin-top: 46.666px; }
@@ -110,7 +110,7 @@
 .sl-container-row-7 .sl-row-offset-9 { margin-top: 209.997px; }
 .sl-container-row-7 .sl-row-offset-10 { margin-top: 233.33px; }
 .sl-container-row-7 .sl-row-offset-11 { margin-top: 256.663px; }
-.sl-row-7 { height: 58.333%; }
+.sl-row-7 { height: 58.331%; }
 .sl-container-row-8 { height: 320px; }
 .sl-container-row-8 .sl-row-offset-1 { margin-top: 26.667px; }
 .sl-container-row-8 .sl-row-offset-2 { margin-top: 53.334px; }
@@ -123,7 +123,7 @@
 .sl-container-row-8 .sl-row-offset-9 { margin-top: 240.003px; }
 .sl-container-row-8 .sl-row-offset-10 { margin-top: 266.67px; }
 .sl-container-row-8 .sl-row-offset-11 { margin-top: 293.337px; }
-.sl-row-8 { height: 66.667%; }
+.sl-row-8 { height: 66.664%; }
 .sl-container-row-9 { height: 360px; }
 .sl-container-row-9 .sl-row-offset-1 { margin-top: 30px; }
 .sl-container-row-9 .sl-row-offset-2 { margin-top: 60px; }
@@ -136,7 +136,7 @@
 .sl-container-row-9 .sl-row-offset-9 { margin-top: 270px; }
 .sl-container-row-9 .sl-row-offset-10 { margin-top: 300px; }
 .sl-container-row-9 .sl-row-offset-11 { margin-top: 330px; }
-.sl-row-9 { height: 75%; }
+.sl-row-9 { height: 74.997%; }
 .sl-container-row-10 { height: 400px; }
 .sl-container-row-10 .sl-row-offset-1 { margin-top: 33.333px; }
 .sl-container-row-10 .sl-row-offset-2 { margin-top: 66.666px; }
@@ -149,7 +149,7 @@
 .sl-container-row-10 .sl-row-offset-9 { margin-top: 299.997px; }
 .sl-container-row-10 .sl-row-offset-10 { margin-top: 333.33px; }
 .sl-container-row-10 .sl-row-offset-11 { margin-top: 366.663px; }
-.sl-row-10 { height: 83.333%; }
+.sl-row-10 { height: 83.33%; }
 .sl-container-row-11 { height: 440px; }
 .sl-container-row-11 .sl-row-offset-1 { margin-top: 36.667px; }
 .sl-container-row-11 .sl-row-offset-2 { margin-top: 73.334px; }
@@ -162,7 +162,7 @@
 .sl-container-row-11 .sl-row-offset-9 { margin-top: 330.003px; }
 .sl-container-row-11 .sl-row-offset-10 { margin-top: 366.67px; }
 .sl-container-row-11 .sl-row-offset-11 { margin-top: 403.337px; }
-.sl-row-11 { height: 91.667%; }
+.sl-row-11 { height: 91.663%; }
 .sl-container-row-12 { height: 480px; }
 .sl-container-row-12 .sl-row-offset-1 { margin-top: 40px; }
 .sl-container-row-12 .sl-row-offset-2 { margin-top: 80px; }
@@ -175,7 +175,7 @@
 .sl-container-row-12 .sl-row-offset-9 { margin-top: 360px; }
 .sl-container-row-12 .sl-row-offset-10 { margin-top: 400px; }
 .sl-container-row-12 .sl-row-offset-11 { margin-top: 440px; }
-.sl-row-12 { height: 100%; }
+.sl-row-12 { height: 99.996%; }
 .sl-container-col {
   margin-right: -10px;
   margin-left: -10px;
@@ -188,23 +188,23 @@
 .sl-col-offset-1 { margin-left: 8.333%; }
 .sl-col-1 { width: 8.333%; }
 .sl-col-offset-2 { margin-left: 16.666%; }
-.sl-col-2 { width: 16.667%; }
+.sl-col-2 { width: 16.666%; }
 .sl-col-offset-3 { margin-left: 24.999%; }
-.sl-col-3 { width: 25%; }
+.sl-col-3 { width: 24.999%; }
 .sl-col-offset-4 { margin-left: 33.332%; }
-.sl-col-4 { width: 33.333%; }
+.sl-col-4 { width: 33.332%; }
 .sl-col-offset-5 { margin-left: 41.665%; }
-.sl-col-5 { width: 41.667%; }
+.sl-col-5 { width: 41.665%; }
 .sl-col-offset-6 { margin-left: 49.998%; }
-.sl-col-6 { width: 50%; }
+.sl-col-6 { width: 49.998%; }
 .sl-col-offset-7 { margin-left: 58.331%; }
-.sl-col-7 { width: 58.333%; }
+.sl-col-7 { width: 58.331%; }
 .sl-col-offset-8 { margin-left: 66.664%; }
-.sl-col-8 { width: 66.667%; }
+.sl-col-8 { width: 66.664%; }
 .sl-col-offset-9 { margin-left: 74.997%; }
-.sl-col-9 { width: 75%; }
+.sl-col-9 { width: 74.997%; }
 .sl-col-offset-10 { margin-left: 83.33%; }
-.sl-col-10 { width: 83.333%; }
+.sl-col-10 { width: 83.33%; }
 .sl-col-offset-11 { margin-left: 91.663%; }
-.sl-col-11 { width: 91.667%; }
-.sl-col-12 { width: 100%; }
+.sl-col-11 { width: 91.663%; }
+.sl-col-12 { width: 99.996%; }
