@@ -34,7 +34,7 @@
     "babel-preset-node5": "^11.0.1",
     "babel-register": "^6.7.2",
     "doiuse": "^2.3.0",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-cli": "^1.2.1",
     "gulp-css-validator": "0.0.4",
     "gulp-gh-pages": "^0.5.4",

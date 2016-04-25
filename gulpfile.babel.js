@@ -7,32 +7,32 @@ import shell from 'gulp-shell';
 import cssValidator from 'gulp-css-validator';
 
 const slim_banner = (
-`*
-* Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
-* ${pkg.title} - ${pkg.description}
-* @version ${pkg.version}
-* @link ${pkg.homepage}
-* @license ${pkg.license.type}
-*`);
+	`*
+	* Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
+	* ${pkg.title} - ${pkg.description}
+	* @version ${pkg.version}
+	* @link ${pkg.homepage}
+	* @license ${pkg.license.type}
+	*`);
 
-gulp.task('jekyll', () => {
+export function jekyll() {
 	return gulp.src('*.js', {read: false})
-	  .pipe(shell('jekyll build'))
-});
+		.pipe(shell('jekyll build'))
+}
 
-gulp.task('deploy', ['pss', 'jekyll'] ,() => {
+export function deployGhPages() {
 	return gulp.src('./_gh-pages/**/*')
-	  .pipe(ghPages())
-});
+		.pipe(ghPages())
+}
 
-gulp.task('psslint', () => {
+export function psslint() {
 	return gulp.src('./src/pss/**/*.pss')
 		.pipe(postcss([
 			require('stylelint')()
 		]))
-});
+}
 
-gulp.task('csssupport', () => {
+export function csssupport() {
 	return gulp.src('./dist/css/**/*.css')
 		.pipe(postcss([
 			require('doiuse')({
@@ -42,9 +42,9 @@ gulp.task('csssupport', () => {
 				]
 			})
 		]))
-});
+}
 
-gulp.task('pss', ['test'],() => {
+export function pss() {
 	return gulp.src(`./src/pss/${pkg.title}.pss`)
 		.pipe(postcss([
 			require('postcss-devtools')(),
@@ -66,7 +66,7 @@ gulp.task('pss', ['test'],() => {
 			require('postcss-sorting')(),
 			require('postcss-banner')({banner: slim_banner}),
 			require('postcss-browser-reporter')()
-		]))
+			]))
 		.pipe(cssValidator())
 		.pipe(rename({ extname: '.css' }))
 		.pipe(gulp.dest('./dist/css/'))
@@ -74,11 +74,16 @@ gulp.task('pss', ['test'],() => {
 		.pipe(postcss([
 			require('postcss-devtools')(),
 			require('postcss-csso')()
-		]))
+			]))
 		.pipe(rename({ extname: '.min.css' }))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
-});
+}
 
-gulp.task('default',['pss']);
-gulp.task('test',['psslint', 'csssupport']);
+const deploy = gulp.series(pss, jekyll, deployGhPages);
+export { deploy };
+
+const build = gulp.series(gulp.parallel(psslint, csssupport), gulp.parallel(pss));
+export { build };
+
+export default build;
