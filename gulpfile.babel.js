@@ -80,10 +80,13 @@ export function pss() {
 		.pipe(gulp.dest('./docs/dist/css/'))
 }
 
+const test = gulp.parallel(psslint, csssupport);
+export { test };
+
 const deploy = gulp.series(pss, jekyll, deployGhPages);
 export { deploy };
 
-const build = gulp.series(gulp.parallel(psslint, csssupport), gulp.parallel(pss));
+const build = gulp.series(test, gulp.parallel(pss));
 export { build };
 
 export default build;
