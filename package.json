@@ -42,7 +42,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
     "postcss-at-rules-variables": "0.0.21",
-    "postcss-attribute-selector-prefix": "0.0.3",
+    "postcss-attribute-selector-prefix": "0.0.4",
     "postcss-banner": "^1.2.0",
     "postcss-browser-reporter": "^0.4.0",
     "postcss-calc": "^5.2.1",
