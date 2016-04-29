@@ -3,7 +3,7 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
 import pkg from './package.json';
-import shell from 'gulp-shell';
+import execa from 'execa';
 import cssValidator from 'gulp-css-validator';
 
 const slim_banner = (
@@ -16,8 +16,7 @@ const slim_banner = (
 	*`);
 
 export function jekyll() {
-	return gulp.src('*.js', {read: false})
-		.pipe(shell('jekyll build'))
+	return execa.shell('jekyll build');
 }
 
 export function deployGhPages() {
@@ -58,7 +57,7 @@ export function pss() {
 			require('postcss-for')(),
 			require('postcss-conditionals'),
 			require('postcss-nested')(),
-			require('postcss-calc')({ precision: 3 }),
+			require('postcss-calc')({ precision: 6 }),
 			require('postcss-clearfix')(),
 			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),

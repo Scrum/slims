@@ -28,7 +28,7 @@
   }
 
   .row-$i {
-    height: calc((100% / var(--grid-col-count)) * $i);
+    height: calc((100% * $i) / var(--grid-col-count));
   }
 }
 
@@ -46,11 +46,11 @@
 @for $i from 1 to var(--grid-col-count) {
   @if($i != var(--grid-col-count)) {
     .col-offset-$i {
-      margin-left: calc((100% / var(--grid-col-count)) * $i);
+      margin-left: calc((100% * $i) / var(--grid-col-count));
     }
   }
 
   .col-$i {
-    width: calc((100% / var(--grid-col-count)) * $i);
+    width: calc((100% * $i) / var(--grid-col-count));
   }
 }
