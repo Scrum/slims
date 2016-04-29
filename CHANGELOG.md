@@ -1,3 +1,11 @@
+## [0.4.16] - 29-04-2016
+### Change
+- Update #112, devDep
+- Change #110, preset node5 to es2015-node6
+- Change #109, round witch 3 to 6 float symbols
+- Change return method precent calcing
+- Change #111, gulp shell to execa
+
 ## [0.4.15] - 25-04-2016
 ### Change
 - Update #73, migrate to gulp 4
