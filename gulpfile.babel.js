@@ -58,7 +58,7 @@ export function pss() {
 			require('postcss-for')(),
 			require('postcss-conditionals'),
 			require('postcss-nested')(),
-			require('postcss-calc')({ precision: 3 }),
+			require('postcss-calc')({ precision: 6 }),
 			require('postcss-clearfix')(),
 			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),
