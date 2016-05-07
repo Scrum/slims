@@ -60,7 +60,7 @@
     "postcss-mixins": "^4.0.1",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.2.3",
-    "stylelint": "^6.1.1",
+    "stylelint": "^6.3.0",
     "stylelint-config-standard": "^6.0.0",
     "updtr": "^0.1.13"
   },
