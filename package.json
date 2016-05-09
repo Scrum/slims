@@ -50,7 +50,7 @@
     "postcss-clearfix": "^1.0.0",
     "postcss-cli": "^2.5.2",
     "postcss-conditionals": "^2.0.2",
-    "postcss-csso": "^1.1.1",
+    "postcss-csso": "^1.1.2",
     "postcss-custom-properties": "^5.0.1",
     "postcss-devtools": "^1.0.0",
     "postcss-easy-import": "^1.0.1",
