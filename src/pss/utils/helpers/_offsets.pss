@@ -1,0 +1,7 @@
+@each $position in top, bottom, left, right {
+  @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
+    .offset-$(step)-$(position) {
+      margin-$(position): calc($(step) * (1var(--offset-ext)));
+    }
+  }
+}

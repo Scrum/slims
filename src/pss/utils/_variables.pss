@@ -6,4 +6,8 @@
   --grid-row-height: 40;
   --space-gutter: 20;
   --space-gutter-ext: px;
+  --offset-to: 40;
+  --offset-from: 5;
+  --offset-step: 5;
+  --offset-ext: px;
 }
