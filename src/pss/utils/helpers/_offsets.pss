@@ -3,5 +3,8 @@
     .offset-$(step)-$(position) {
       margin-$(position): calc($(step) * (1var(--offset-ext)));
     }
+    .offset-inside-$(step)-$(position) {
+      padding-$(position): calc($(step) * (1var(--offset-ext)));
+    }
   }
 }
