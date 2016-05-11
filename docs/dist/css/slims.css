@@ -1,7 +1,7 @@
 /**
 	* Copyright (c) 2016 GitScrum
 	* slims - Vanilla CSS framework
-	* @version 0.4.16
+	* @version 0.5.0
 	* @link https://github.com/GitScrum/slim
 	* @license MIT
 	**/
@@ -166,6 +166,27 @@
 .sl-box-right-30 { right: 30px; }
 .sl-box-right-35 { right: 35px; }
 .sl-box-right-40 { right: 40px; }
+.sl-clearfix:after { display: block; clear: both; content: ''; }
+.sl-reset-offset-top { margin-top: 0; margin-top: initial; }
+.sl-reset-offset-inside-top { padding-top: 0; padding-top: initial; }
+.sl-reset-box-top { top: auto; top: initial; }
+.sl-reset-offset-bottom { margin-bottom: 0; margin-bottom: initial; }
+.sl-reset-offset-inside-bottom { padding-bottom: 0; padding-bottom: initial; }
+.sl-reset-box-bottom { bottom: auto; bottom: initial; }
+.sl-reset-offset-left { margin-left: 0; margin-left: initial; }
+.sl-reset-offset-inside-left { padding-left: 0; padding-left: initial; }
+.sl-reset-box-left { left: auto; left: initial; }
+.sl-reset-offset-right { margin-right: 0; margin-right: initial; }
+.sl-reset-offset-inside-right { padding-right: 0; padding-right: initial; }
+.sl-reset-box-right { right: auto; right: initial; }
+.sl-reset-offset-v { margin-right: 0; margin-right: initial; margin-left: 0; margin-left: initial; }
+.sl-reset-offset-inside-v { padding-right: 0; padding-right: initial; padding-left: 0; padding-left: initial; }
+.sl-reset-offset-h { margin-top: 0; margin-top: initial; margin-bottom: 0; margin-bottom: initial; }
+.sl-reset-offset-inside-h { padding-top: 0; padding-top: initial; padding-bottom: 0; padding-bottom: initial; }
+.sl-reset-col {
+  width: auto;
+  width: initial;
+}
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
 .sl-container-row:after,
