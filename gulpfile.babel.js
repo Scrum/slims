@@ -51,6 +51,7 @@ export function pss() {
 				prefix: '_',
 				extensions: '.pss'
 			}),
+			require('postcss-each')(),
 			require('postcss-mixins')(),
 			require('postcss-at-rules-variables')(),
 			require('postcss-custom-properties')(),

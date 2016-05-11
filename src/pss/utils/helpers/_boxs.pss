@@ -1,0 +1,21 @@
+.box-left {
+  float: left;
+}
+.box-right {
+  float: right;
+}
+.box-relative {
+  position: relative;
+}
+.box-absolute {
+  position: absolute;
+}
+
+@each $position in top, bottom, left, right {
+  @for $step from var(--position-from) to var(--position-to) by var(--position-step) {
+    .box-$(position)-$(step) {
+      $(position): calc($(step) * (1var(--position-ext)));
+    }
+  }
+}
+

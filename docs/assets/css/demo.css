@@ -1,14 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,300italic,300,500,500italic,700,700italic);
 * {height: inherit;}
-body {color: #212121; font: 100% "Robot Mono", sans-serif;}
-a {color: #607d8b;text-decoration: none;}
-h1, h2, p {margin: 0}
-h1, h2 { text-transform: capitalize; }
-.highlight {border: 1px solid #bdbdbd;padding: 20px;background-color: #eeeeee;margin-bottom: 20px;}
+body {
+  color: rgba(192, 192, 192, 1);
+  font: 100% "Robot Mono", sans-serif;
+  background-color: rgba(38, 50, 56, 1);
+}
+a {color: rgb(0, 203, 196);text-decoration: none;}
+h1, h2, h3, p {margin: 0}
+h1, h2 h3 { text-transform: capitalize; }
+.highlight {border: 1px solid #607d8b;padding: 20px;background-color: #263238;margin-bottom: 20px;}
 .demo-brand { font-size: 28px; line-height: 1; }
 .demo-space {margin-bottom: 20px;}
 .demo-nav {
-	background-color:  teal;
+	background-color: cadetblue;
 	padding: 0 10px;
 }
 .demo-pull-right { float: right; }
@@ -23,15 +27,21 @@ h1, h2 { text-transform: capitalize; }
 }
 .demo-col [class*="sl-col"],
 .demo-row [class*="sl-row"] {
-	background-color: #cfd8dc;
-	border: 1px solid #90a4ae;
+	background-color: turquoise;
+	border: 1px solid cadetblue;
+  color: rgba(38, 50, 56, 1);
 }
 .demo	{
 	background-color: turquoise;
 	height: 100%;
+  color: rgba(38, 50, 56, 1);
 }
 .demo-container {
 	background-color: cadetblue;
 	clear: both;
 	overflow-y: hidden;
+}
+.warning {
+  background-color: rgba(255, 235, 149, 1);
+  color: rgba(38, 50, 56, 1);
 }

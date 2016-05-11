@@ -1,7 +1,7 @@
 /**
 	* Copyright (c) 2016 GitScrum
 	* slims - Vanilla CSS framework
-	* @version 0.4.16
+	* @version 0.5.0
 	* @link https://github.com/GitScrum/slim
 	* @license MIT
 	**/
@@ -10,6 +10,183 @@
 .sl-space-md { margin-bottom: 20px; }
 .sl-space-lg { margin-bottom: 40px; }
 .sl-space-reset { margin-bottom: 0; margin-bottom: initial; }
+.sl-offset-5 { margin: 5px; }
+.sl-offset-inside-5 { padding: 5px; }
+.sl-offset-10 { margin: 10px; }
+.sl-offset-inside-10 { padding: 10px; }
+.sl-offset-15 { margin: 15px; }
+.sl-offset-inside-15 { padding: 15px; }
+.sl-offset-20 { margin: 20px; }
+.sl-offset-inside-20 { padding: 20px; }
+.sl-offset-25 { margin: 25px; }
+.sl-offset-inside-25 { padding: 25px; }
+.sl-offset-30 { margin: 30px; }
+.sl-offset-inside-30 { padding: 30px; }
+.sl-offset-35 { margin: 35px; }
+.sl-offset-inside-35 { padding: 35px; }
+.sl-offset-40 { margin: 40px; }
+.sl-offset-inside-40 { padding: 40px; }
+.sl-offset-v-5 { margin-right: 5px; margin-left: 5px; }
+.sl-offset-inside-v-5 { padding-right: 5px; padding-left: 5px; }
+.sl-offset-v-10 { margin-right: 10px; margin-left: 10px; }
+.sl-offset-inside-v-10 { padding-right: 10px; padding-left: 10px; }
+.sl-offset-v-15 { margin-right: 15px; margin-left: 15px; }
+.sl-offset-inside-v-15 { padding-right: 15px; padding-left: 15px; }
+.sl-offset-v-20 { margin-right: 20px; margin-left: 20px; }
+.sl-offset-inside-v-20 { padding-right: 20px; padding-left: 20px; }
+.sl-offset-v-25 { margin-right: 25px; margin-left: 25px; }
+.sl-offset-inside-v-25 { padding-right: 25px; padding-left: 25px; }
+.sl-offset-v-30 { margin-right: 30px; margin-left: 30px; }
+.sl-offset-inside-v-30 { padding-right: 30px; padding-left: 30px; }
+.sl-offset-v-35 { margin-right: 35px; margin-left: 35px; }
+.sl-offset-inside-v-35 { padding-right: 35px; padding-left: 35px; }
+.sl-offset-v-40 { margin-right: 40px; margin-left: 40px; }
+.sl-offset-inside-v-40 { padding-right: 40px; padding-left: 40px; }
+.sl-offset-h-5 { margin-top: 5px; margin-bottom: 5px; }
+.sl-offset-inside-h-5 { padding-top: 5px; padding-bottom: 5px; }
+.sl-offset-h-10 { margin-top: 10px; margin-bottom: 10px; }
+.sl-offset-inside-h-10 { padding-top: 10px; padding-bottom: 10px; }
+.sl-offset-h-15 { margin-top: 15px; margin-bottom: 15px; }
+.sl-offset-inside-h-15 { padding-top: 15px; padding-bottom: 15px; }
+.sl-offset-h-20 { margin-top: 20px; margin-bottom: 20px; }
+.sl-offset-inside-h-20 { padding-top: 20px; padding-bottom: 20px; }
+.sl-offset-h-25 { margin-top: 25px; margin-bottom: 25px; }
+.sl-offset-inside-h-25 { padding-top: 25px; padding-bottom: 25px; }
+.sl-offset-h-30 { margin-top: 30px; margin-bottom: 30px; }
+.sl-offset-inside-h-30 { padding-top: 30px; padding-bottom: 30px; }
+.sl-offset-h-35 { margin-top: 35px; margin-bottom: 35px; }
+.sl-offset-inside-h-35 { padding-top: 35px; padding-bottom: 35px; }
+.sl-offset-h-40 { margin-top: 40px; margin-bottom: 40px; }
+.sl-offset-inside-h-40 { padding-top: 40px; padding-bottom: 40px; }
+.sl-offset-top-5 { margin-top: 5px; }
+.sl-offset-inside-top-5 { padding-top: 5px; }
+.sl-offset-top-10 { margin-top: 10px; }
+.sl-offset-inside-top-10 { padding-top: 10px; }
+.sl-offset-top-15 { margin-top: 15px; }
+.sl-offset-inside-top-15 { padding-top: 15px; }
+.sl-offset-top-20 { margin-top: 20px; }
+.sl-offset-inside-top-20 { padding-top: 20px; }
+.sl-offset-top-25 { margin-top: 25px; }
+.sl-offset-inside-top-25 { padding-top: 25px; }
+.sl-offset-top-30 { margin-top: 30px; }
+.sl-offset-inside-top-30 { padding-top: 30px; }
+.sl-offset-top-35 { margin-top: 35px; }
+.sl-offset-inside-top-35 { padding-top: 35px; }
+.sl-offset-top-40 { margin-top: 40px; }
+.sl-offset-inside-top-40 { padding-top: 40px; }
+.sl-offset-bottom-5 { margin-bottom: 5px; }
+.sl-offset-inside-bottom-5 { padding-bottom: 5px; }
+.sl-offset-bottom-10 { margin-bottom: 10px; }
+.sl-offset-inside-bottom-10 { padding-bottom: 10px; }
+.sl-offset-bottom-15 { margin-bottom: 15px; }
+.sl-offset-inside-bottom-15 { padding-bottom: 15px; }
+.sl-offset-bottom-20 { margin-bottom: 20px; }
+.sl-offset-inside-bottom-20 { padding-bottom: 20px; }
+.sl-offset-bottom-25 { margin-bottom: 25px; }
+.sl-offset-inside-bottom-25 { padding-bottom: 25px; }
+.sl-offset-bottom-30 { margin-bottom: 30px; }
+.sl-offset-inside-bottom-30 { padding-bottom: 30px; }
+.sl-offset-bottom-35 { margin-bottom: 35px; }
+.sl-offset-inside-bottom-35 { padding-bottom: 35px; }
+.sl-offset-bottom-40 { margin-bottom: 40px; }
+.sl-offset-inside-bottom-40 { padding-bottom: 40px; }
+.sl-offset-left-5 { margin-left: 5px; }
+.sl-offset-inside-left-5 { padding-left: 5px; }
+.sl-offset-left-10 { margin-left: 10px; }
+.sl-offset-inside-left-10 { padding-left: 10px; }
+.sl-offset-left-15 { margin-left: 15px; }
+.sl-offset-inside-left-15 { padding-left: 15px; }
+.sl-offset-left-20 { margin-left: 20px; }
+.sl-offset-inside-left-20 { padding-left: 20px; }
+.sl-offset-left-25 { margin-left: 25px; }
+.sl-offset-inside-left-25 { padding-left: 25px; }
+.sl-offset-left-30 { margin-left: 30px; }
+.sl-offset-inside-left-30 { padding-left: 30px; }
+.sl-offset-left-35 { margin-left: 35px; }
+.sl-offset-inside-left-35 { padding-left: 35px; }
+.sl-offset-left-40 { margin-left: 40px; }
+.sl-offset-inside-left-40 { padding-left: 40px; }
+.sl-offset-right-5 { margin-right: 5px; }
+.sl-offset-inside-right-5 { padding-right: 5px; }
+.sl-offset-right-10 { margin-right: 10px; }
+.sl-offset-inside-right-10 { padding-right: 10px; }
+.sl-offset-right-15 { margin-right: 15px; }
+.sl-offset-inside-right-15 { padding-right: 15px; }
+.sl-offset-right-20 { margin-right: 20px; }
+.sl-offset-inside-right-20 { padding-right: 20px; }
+.sl-offset-right-25 { margin-right: 25px; }
+.sl-offset-inside-right-25 { padding-right: 25px; }
+.sl-offset-right-30 { margin-right: 30px; }
+.sl-offset-inside-right-30 { padding-right: 30px; }
+.sl-offset-right-35 { margin-right: 35px; }
+.sl-offset-inside-right-35 { padding-right: 35px; }
+.sl-offset-right-40 { margin-right: 40px; }
+.sl-offset-inside-right-40 { padding-right: 40px; }
+.sl-box-left {
+  float: left;
+}
+.sl-box-right {
+  float: right;
+}
+.sl-box-relative {
+  position: relative;
+}
+.sl-box-absolute {
+  position: absolute;
+}
+.sl-box-top-5 { top: 5px; }
+.sl-box-top-10 { top: 10px; }
+.sl-box-top-15 { top: 15px; }
+.sl-box-top-20 { top: 20px; }
+.sl-box-top-25 { top: 25px; }
+.sl-box-top-30 { top: 30px; }
+.sl-box-top-35 { top: 35px; }
+.sl-box-top-40 { top: 40px; }
+.sl-box-bottom-5 { bottom: 5px; }
+.sl-box-bottom-10 { bottom: 10px; }
+.sl-box-bottom-15 { bottom: 15px; }
+.sl-box-bottom-20 { bottom: 20px; }
+.sl-box-bottom-25 { bottom: 25px; }
+.sl-box-bottom-30 { bottom: 30px; }
+.sl-box-bottom-35 { bottom: 35px; }
+.sl-box-bottom-40 { bottom: 40px; }
+.sl-box-left-5 { left: 5px; }
+.sl-box-left-10 { left: 10px; }
+.sl-box-left-15 { left: 15px; }
+.sl-box-left-20 { left: 20px; }
+.sl-box-left-25 { left: 25px; }
+.sl-box-left-30 { left: 30px; }
+.sl-box-left-35 { left: 35px; }
+.sl-box-left-40 { left: 40px; }
+.sl-box-right-5 { right: 5px; }
+.sl-box-right-10 { right: 10px; }
+.sl-box-right-15 { right: 15px; }
+.sl-box-right-20 { right: 20px; }
+.sl-box-right-25 { right: 25px; }
+.sl-box-right-30 { right: 30px; }
+.sl-box-right-35 { right: 35px; }
+.sl-box-right-40 { right: 40px; }
+.sl-clearfix:after { display: block; clear: both; content: ''; }
+.sl-reset-offset-top { margin-top: 0; margin-top: initial; }
+.sl-reset-offset-inside-top { padding-top: 0; padding-top: initial; }
+.sl-reset-box-top { top: auto; top: initial; }
+.sl-reset-offset-bottom { margin-bottom: 0; margin-bottom: initial; }
+.sl-reset-offset-inside-bottom { padding-bottom: 0; padding-bottom: initial; }
+.sl-reset-box-bottom { bottom: auto; bottom: initial; }
+.sl-reset-offset-left { margin-left: 0; margin-left: initial; }
+.sl-reset-offset-inside-left { padding-left: 0; padding-left: initial; }
+.sl-reset-box-left { left: auto; left: initial; }
+.sl-reset-offset-right { margin-right: 0; margin-right: initial; }
+.sl-reset-offset-inside-right { padding-right: 0; padding-right: initial; }
+.sl-reset-box-right { right: auto; right: initial; }
+.sl-reset-offset-v { margin-right: 0; margin-right: initial; margin-left: 0; margin-left: initial; }
+.sl-reset-offset-inside-v { padding-right: 0; padding-right: initial; padding-left: 0; padding-left: initial; }
+.sl-reset-offset-h { margin-top: 0; margin-top: initial; margin-bottom: 0; margin-bottom: initial; }
+.sl-reset-offset-inside-h { padding-top: 0; padding-top: initial; padding-bottom: 0; padding-bottom: initial; }
+.sl-reset-col {
+  width: auto;
+  width: initial;
+}
 [class*="sl-col"],
 [class*="sl-row"] { box-sizing: border-box; }
 .sl-container-row:after,
