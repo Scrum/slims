@@ -1,3 +1,21 @@
+## [0.5.0] - 11-05-2016
+### Added
+- Added #104, helper offset
+- Added #28, helper offset inside
+- Added postcss-each
+- Added vertical, horizontal, around offset
+- Added offset to gh-page
+- Added #103, helper boxs
+- Added #53, clearfix
+- Added #50, helper resets
+
+### Change
+- Update devDep
+- Update #116, added files folder
+
+### Fixed
+- Fixed linter report error
+
 ## [0.4.16] - 29-04-2016
 ### Change
 - Update #112, devDep
