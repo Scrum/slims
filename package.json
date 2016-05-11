@@ -1,7 +1,7 @@
 {
   "name": "slims",
   "title": "slims",
-  "version": "0.4.16",
+  "version": "0.5.0",
   "description": "Vanilla CSS framework",
   "main": "dist/slims.min.css",
   "files": [
