@@ -4,6 +4,9 @@
   "version": "0.4.16",
   "description": "Vanilla CSS framework",
   "main": "dist/slims.min.css",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "test": "gulp test",
     "build": "gulp",
