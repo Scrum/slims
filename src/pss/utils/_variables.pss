@@ -10,4 +10,8 @@
   --offset-from: 5;
   --offset-step: 5;
   --offset-ext: px;
+  --position-to: 40;
+  --position-from: 5;
+  --position-step: 5;
+  --position-ext: px;
 }
