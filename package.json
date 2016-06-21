@@ -64,7 +64,7 @@
     "postcss-mixins": "^4.0.2",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.6.0",
-    "stylelint": "^6.6.0",
+    "stylelint": "^6.7.0",
     "stylelint-config-standard": "^9.0.0",
     "updtr": "^0.1.15"
   },
