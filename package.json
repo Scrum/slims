@@ -46,7 +46,7 @@
     "gulp-rename": "^1.2.2",
     "postcss-at-rules-variables": "0.0.24",
     "postcss-attribute-selector-prefix": "0.0.8",
-    "postcss-banner": "^2.0.0",
+    "postcss-banner": "^3.0.0",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-calc": "^5.2.1",
     "postcss-class-prefix": "^0.3.0",
