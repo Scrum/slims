@@ -36,7 +36,7 @@
   "devDependencies": {
     "babel-preset-es2015-node6": "^0.2.0",
     "babel-register": "^6.9.0",
-    "doiuse": "^2.3.0",
+    "doiuse": "^2.4.1",
     "execa": "^0.4.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-cli": "^1.2.1",
