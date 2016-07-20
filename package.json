@@ -60,7 +60,7 @@
     "postcss-easy-import": "^1.0.1",
     "postcss-extend": "^1.0.4",
     "postcss-for": "^2.0.3",
-    "postcss-initial": "^1.5.1",
+    "postcss-initial": "^1.5.2",
     "postcss-mixins": "^5.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-sorting": "^1.6.1",
