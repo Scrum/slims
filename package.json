@@ -48,7 +48,7 @@
     "postcss-attribute-selector-prefix": "0.0.9",
     "postcss-banner": "^3.0.0",
     "postcss-browser-reporter": "^0.5.0",
-    "postcss-calc": "^5.3.0",
+    "postcss-calc": "^5.3.1",
     "postcss-class-prefix": "^0.3.0",
     "postcss-clearfix": "^1.0.0",
     "postcss-cli": "^2.5.2",
