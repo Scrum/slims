@@ -35,7 +35,7 @@
   "homepage": "https://github.com/GitScrum/slim",
   "devDependencies": {
     "babel-preset-es2015-node6": "^0.3.0",
-    "babel-register": "^6.14.0",
+    "babel-register": "^6.16.0",
     "doiuse": "^2.5.0",
     "execa": "^0.4.0",
     "gulp": "github:gulpjs/gulp#4.0",
