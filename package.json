@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/GitScrum/slim",
   "devDependencies": {
-    "babel-preset-es2015-node6": "^0.3.0",
+    "babel-preset-es2015-node6": "^0.4.0",
     "babel-register": "^6.18.0",
     "doiuse": "^2.5.0",
     "execa": "^0.5.0",
