@@ -37,7 +37,7 @@
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-register": "^6.18.0",
     "doiuse": "^2.5.0",
-    "execa": "^0.5.1",
+    "execa": "^0.6.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-cli": "^1.2.2",
     "gulp-css-validator": "0.0.4",
