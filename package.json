@@ -10,6 +10,7 @@
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog v`npm view post-config version`\"",
+    "pretest": "clinton",
     "test": "gulp test",
     "build": "gulp",
     "deploy": "gulp deploy",
@@ -38,6 +39,7 @@
   "devDependencies": {
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-register": "^6.18.0",
+    "clinton": "^0.10.0",
     "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-lint": "^1.1.0",
     "doiuse": "^2.5.0",
@@ -80,5 +82,21 @@
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
+  },
+  "clinton": {
+    "ignores": [
+      "test/**",
+      "tmp/**",
+      "lib/**",
+      "*.{html,jpg}"
+    ],
+    "rules": {
+      "pkg-main": [
+        "off"
+      ],
+      "xo": [
+        "off"
+      ]
+    }
   }
 }
