@@ -6,7 +6,7 @@ import pkg from './package.json';
 import execa from 'execa';
 import cssValidator from 'gulp-css-validator';
 
-const slim_banner = (
+const slimBanner = (
 	`*
 	* Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
 	* ${pkg.title} - ${pkg.description}
@@ -21,14 +21,14 @@ export function jekyll() {
 
 export function deployGhPages() {
 	return gulp.src('./_gh-pages/**/*')
-		.pipe(ghPages())
+		.pipe(ghPages());
 }
 
 export function psslint() {
 	return gulp.src('./src/pss/**/*.pss')
 		.pipe(postcss([
 			require('stylelint')()
-		]))
+		]));
 }
 
 export function csssupport() {
@@ -40,7 +40,7 @@ export function csssupport() {
 					'last 2 versions'
 				]
 			})
-		]))
+		]));
 }
 
 export function pss() {
@@ -58,35 +58,35 @@ export function pss() {
 			require('postcss-for')(),
 			require('postcss-conditionals'),
 			require('postcss-nested')(),
-			require('postcss-calc')({ precision: 6 }),
+			require('postcss-calc')({precision: 6}),
 			require('postcss-clearfix')(),
 			require('postcss-initial')(),
 			require('postcss-class-prefix')('sl-'),
 			require('postcss-attribute-selector-prefix')({prefix: 'sl-', filter: ['class']}),
 			require('postcss-sorting')(),
-			require('postcss-banner')({banner: slim_banner}),
+			require('postcss-banner')({banner: slimBanner}),
 			require('postcss-browser-reporter')()
-			]))
+		]))
 		.pipe(cssValidator())
-		.pipe(rename({ extname: '.css' }))
+		.pipe(rename({extname: '.css'}))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
 		.pipe(postcss([
 			require('postcss-devtools')(),
 			require('postcss-csso')()
-			]))
-		.pipe(rename({ extname: '.min.css' }))
+		]))
+		.pipe(rename({extname: '.min.css'}))
 		.pipe(gulp.dest('./dist/css/'))
-		.pipe(gulp.dest('./docs/dist/css/'))
+		.pipe(gulp.dest('./docs/dist/css/'));
 }
 
 const test = gulp.parallel(psslint, csssupport);
-export { test };
+export {test};
 
 const deploy = gulp.series(pss, jekyll, deployGhPages);
-export { deploy };
+export {deploy};
 
 const build = gulp.series(test, gulp.parallel(pss));
-export { build };
+export {build};
 
 export default build;
