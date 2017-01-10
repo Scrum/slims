@@ -12,7 +12,7 @@ const slimBanner = (
 	* ${pkg.title} - ${pkg.description}
 	* @version ${pkg.version}
 	* @link ${pkg.homepage}
-	* @license ${pkg.license.type}
+	* @license ${pkg.license}
 	*`);
 
 export function jekyll() {
@@ -25,7 +25,7 @@ export function deployGhPages() {
 }
 
 export function psslint() {
-	return gulp.src('./src/pss/**/*.pss')
+	return gulp.src('./src/css/**/*.css')
 		.pipe(postcss([
 			require('stylelint')()
 		]));
@@ -43,13 +43,13 @@ export function csssupport() {
 		]));
 }
 
-export function pss() {
-	return gulp.src(`./src/pss/${pkg.title}.pss`)
+export function css() {
+	return gulp.src(`./src/css/${pkg.name}.css`)
 		.pipe(postcss([
 			require('postcss-devtools')(),
 			require('postcss-easy-import')({
 				prefix: '_',
-				extensions: '.pss'
+				extensions: '.css'
 			}),
 			require('postcss-each')(),
 			require('postcss-mixins')(),
@@ -68,7 +68,6 @@ export function pss() {
 			require('postcss-browser-reporter')()
 		]))
 		.pipe(cssValidator())
-		.pipe(rename({extname: '.css'}))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(gulp.dest('./docs/dist/css/'))
 		.pipe(postcss([
@@ -83,10 +82,10 @@ export function pss() {
 const test = gulp.parallel(psslint, csssupport);
 export {test};
 
-const deploy = gulp.series(pss, jekyll, deployGhPages);
+const deploy = gulp.series(css, jekyll, deployGhPages);
 export {deploy};
 
-const build = gulp.series(test, gulp.parallel(pss));
+const build = gulp.series(test, gulp.parallel(css));
 export {build};
 
 export default build;

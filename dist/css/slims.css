@@ -1,10 +1,12 @@
-/**
-	* Copyright (c) 2016 GitScrum
-	* slims - Vanilla CSS framework
-	* @version 0.5.0
-	* @link https://github.com/GitScrum/slim
-	* @license MIT
-	**/
+/*
+ * *
+ * 	* Copyright (c) 2017 Ivan Demidov
+ * 	* undefined - Vanilla CSS framework
+ * 	* @version 0.5.0
+ * 	* @link gitscrum/slims#readme
+ * 	* @license MIT
+ * 	*
+ */
 .sl-space-xs { margin-bottom: 5px; }
 .sl-space-sm { margin-bottom: 10px; }
 .sl-space-md { margin-bottom: 20px; }
