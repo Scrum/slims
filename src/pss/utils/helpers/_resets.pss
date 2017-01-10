@@ -21,6 +21,7 @@
       padding-right: initial;
     }
   }
+
   @if ($position == 'h') {
     .reset-offset-$(position) {
       margin-top: initial;

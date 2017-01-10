@@ -1,12 +1,15 @@
 .box-left {
   float: left;
 }
+
 .box-right {
   float: right;
 }
+
 .box-relative {
   position: relative;
 }
+
 .box-absolute {
   position: absolute;
 }
