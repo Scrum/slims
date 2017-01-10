@@ -1,12 +1,20 @@
 {
   "name": "slims",
-  "title": "slims",
   "version": "0.5.0",
   "description": "Vanilla CSS framework",
+  "license": "MIT",
+  "repository": "gitscrum/slims",
+  "homepage": "gitscrum/slims#readme",
+  "bugs": "gitscrum/slims/issues",
+  "author": {
+    "name": "Ivan Demidov",
+    "email": "Scrum@list.ru",
+    "url": "https://twitter.com/Scrum_"
+  },
   "main": "dist/slims.min.css",
-  "files": [
-    "dist/"
-  ],
+  "engines": {
+      "node": ">=4"
+  },
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog v`npm view post-config version`\"",
@@ -16,26 +24,13 @@
     "deploy": "gulp deploy",
     "update": "updtr"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GitScrum/slims.git"
-  },
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "CSS",
     "Framework"
   ],
-  "author": {
-    "name": "GitScrum",
-    "url": "https1://github.com/GitScrum"
-  },
-  "license": {
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
-  },
-  "bugs": {
-    "url": "https://github.com/GitScrum/slims/issues"
-  },
-  "homepage": "https://github.com/GitScrum/slim",
   "devDependencies": {
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-register": "^6.18.0",
@@ -96,7 +91,9 @@
       ],
       "xo": [
         "off"
-      ]
+      ],
+      "ava": [
+        "off"]
     }
   }
 }
