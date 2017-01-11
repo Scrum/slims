@@ -1,6 +1,7 @@
 {
   "use": [
     "postcss-devtools",
+    "stylefmt",
     "postcss-easy-import",
     "postcss-each",
     "postcss-mixins",
