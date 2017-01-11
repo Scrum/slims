@@ -74,6 +74,7 @@
     "postcss-initial": "^1.5.3",
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
+    "postcss-reduce-initial": "^1.0.1",
     "postcss-sorting": "^1.7.0",
     "stylefmt": "^5.0.4",
     "stylelint": "^7.7.1",
