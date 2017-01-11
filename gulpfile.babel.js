@@ -1,19 +1,7 @@
 import gulp from 'gulp';
 import postcss from 'gulp-postcss';
-import rename from 'gulp-rename';
 import ghPages from 'gulp-gh-pages';
-import pkg from './package.json';
 import execa from 'execa';
-import cssValidator from 'gulp-css-validator';
-
-const slimBanner = (
-	`*
-	* Copyright (c) ${new Date().getFullYear()} ${pkg.author.name}
-	* ${pkg.title} - ${pkg.description}
-	* @version ${pkg.version}
-	* @link ${pkg.homepage}
-	* @license ${pkg.license}
-	*`);
 
 export function jekyll() {
 	return execa.shell('jekyll build');
@@ -22,13 +10,6 @@ export function jekyll() {
 export function deployGhPages() {
 	return gulp.src('./_gh-pages/**/*')
 		.pipe(ghPages());
-}
-
-export function psslint() {
-	return gulp.src('./src/css/**/*.css')
-		.pipe(postcss([
-			require('stylelint')()
-		]));
 }
 
 export function csssupport() {
@@ -43,49 +24,10 @@ export function csssupport() {
 		]));
 }
 
-export function css() {
-	return gulp.src(`./src/css/${pkg.name}.css`)
-		.pipe(postcss([
-			require('postcss-devtools')(),
-			require('postcss-easy-import')({
-				prefix: '_',
-				extensions: '.css'
-			}),
-			require('postcss-each')(),
-			require('postcss-mixins')(),
-			require('postcss-at-rules-variables')(),
-			require('postcss-custom-properties')(),
-			require('postcss-for')(),
-			require('postcss-conditionals'),
-			require('postcss-nested')(),
-			require('postcss-calc')({precision: 6}),
-			require('postcss-clearfix')(),
-			require('postcss-initial')(),
-			require('postcss-class-prefix')('sl-'),
-			require('postcss-attribute-selector-prefix')({prefix: 'sl-', filter: ['class']}),
-			require('postcss-sorting')(),
-			require('postcss-banner')({banner: slimBanner}),
-			require('postcss-browser-reporter')()
-		]))
-		.pipe(cssValidator())
-		.pipe(gulp.dest('./dist/css/'))
-		.pipe(gulp.dest('./docs/dist/css/'))
-		.pipe(postcss([
-			require('postcss-devtools')(),
-			require('postcss-csso')()
-		]))
-		.pipe(rename({extname: '.min.css'}))
-		.pipe(gulp.dest('./dist/css/'))
-		.pipe(gulp.dest('./docs/dist/css/'));
-}
-
-const test = gulp.parallel(psslint, csssupport);
+const test = gulp.parallel(csssupport);
 export {test};
 
-const deploy = gulp.series(css, jekyll, deployGhPages);
+const deploy = gulp.series(jekyll, deployGhPages);
 export {deploy};
 
-const build = gulp.series(test, gulp.parallel(css));
-export {build};
-
-export default build;
+export default test;
