@@ -4,14 +4,17 @@
   --grid-col-count: 12;
   --grid-row-count: 12;
   --grid-row-height: 40;
+
   --space-gutter: 20;
   --space-gutter-ext: px;
+
   --offset-to: 40;
-  --offset-from: 5;
+  --offset-from: 0;
   --offset-step: 5;
   --offset-ext: px;
+
   --position-to: 40;
-  --position-from: 5;
+  --position-from: 0;
   --position-step: 5;
   --position-ext: px;
 }

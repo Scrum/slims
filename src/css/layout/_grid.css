@@ -1,19 +1,6 @@
 [class*="col"],
 [class*="row"] { box-sizing: border-box; }
 
-.container-row,
-.container-col { clear: fix; }
-
-.container-row {
-  > [class*="row"]:last-child { padding-bottom: 0; }
-  > [class*="row"]:first-child { padding-top: 0; }
-}
-
-[class*="row"] {
-  padding-bottom: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-  padding-top: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-}
-
 @for $i from 1 to var(--grid-row-count) {
   .container-row-$i {
     height: calc(var(--grid-row-height) * $i * (1var(--grid-gutter-ext)));
@@ -35,12 +22,6 @@
 .container-col {
   margin-left: -calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
   margin-right: -calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-}
-
-[class*="col"] {
-  float: left;
-  padding-left: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-  padding-right: calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
 }
 
 @for $i from 1 to var(--grid-col-count) {
