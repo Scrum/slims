@@ -38,10 +38,32 @@
 @each $position in t, b, l, r {
   @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
     .offset-m$(position)-$(step) {
-      margin-$(position): calc($(step) * (1var(--offset-ext)));
+      @if ($position == 't') {
+        margin-top: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'b') {
+        margin-bottom: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'l') {
+        margin-left: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'r') {
+        margin-right: calc($(step) * (1var(--offset-ext)));
+      }
     }
     .offset-p$(position)-$(step) {
-      padding-$(position): calc($(step) * (1var(--offset-ext)));
+      @if ($position == 't') {
+        padding-top: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'b') {
+        padding-bottom: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'l') {
+        padding-left: calc($(step) * (1var(--offset-ext)));
+      }
+      @if ($position == 'r') {
+        padding-right: calc($(step) * (1var(--offset-ext)));
+      }
     }
   }
 }
