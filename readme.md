@@ -1,4 +1,4 @@
-# [Vanilla CSS framework](http://gitscrum.github.io/)
+# [Vanilla CSS framework](http://gitscrum.github.io/slims)
 
 > The ideology of methodology atomic
 
