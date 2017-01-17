@@ -47,7 +47,6 @@
   ],
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-preset-env": "^1.1.7",
     "browser-sync": "^2.18.6",
     "chokidar-cli": "^1.2.0",
     "clinton": "^0.10.0",
@@ -98,18 +97,6 @@
       "root": "src/docs/",
       "from": "src/docs/layout/"
     }
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
   },
   "eslintConfig": {
     "format": "node_modules/eslint-formatter-pretty",
