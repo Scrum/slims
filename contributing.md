@@ -23,6 +23,8 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
     git remote add upstream https://github.com/gitscrum/slims
     # Install the tools necessary for development
     npm install
+    # Run local server
+    npm run dev
     ```
 
 2. Create a branch for your feature or fix:
