@@ -1,6 +1,5 @@
-_gh-pages/
-.publish/
+_gh-pages
+.publish
 npm-debug.log
-node_modules/
-tests/
+node_modules
 *.sublime*
