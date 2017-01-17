@@ -18,6 +18,9 @@
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog v`npm view post-config version`\"",
+    "patch": "np patch --any-branch",
+    "minor": "np minor --any-branch",
+    "major": "np major --any-branch",
     "lintcss": "stylelint src/**/*.css",
     "lintjs": "eslint ./*.js",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
@@ -59,6 +62,7 @@
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^1.0.0",
     "husky": "^0.12.0",
+    "np": "^2.12.0",
     "postcss-at-rules-variables": "0.0.26",
     "postcss-attribute-selector-prefix": "0.0.12",
     "postcss-calc": "^5.3.1",
