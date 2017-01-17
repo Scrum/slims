@@ -1,15 +1,15 @@
 @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
-  .offset-$(step) {
+  .offset-m-$(step) {
     margin: calc($(step) * (1var(--offset-ext)));
   }
-  .offset-inside-$(step) {
+  .offset-p-$(step) {
     padding: calc($(step) * (1var(--offset-ext)));
   }
 }
 
 @each $position in v, h {
   @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
-    .offset-$(position)-$(step) {
+    .offset-m$(position)-$(step) {
       @if ($position == 'v') {
         margin-left: calc($(step) * (1var(--offset-ext)));
         margin-right: calc($(step) * (1var(--offset-ext)));
@@ -21,7 +21,7 @@
       }
     }
 
-    .offset-inside-$(position)-$(step) {
+    .offset-p$(position)-$(step) {
       @if ($position == 'v') {
         padding-left: calc($(step) * (1var(--offset-ext)));
         padding-right: calc($(step) * (1var(--offset-ext)));
@@ -35,13 +35,41 @@
   }
 }
 
-@each $position in top, bottom, left, right {
+@each $position in t, b, l, r {
   @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
-    .offset-$(position)-$(step) {
-      margin-$(position): calc($(step) * (1var(--offset-ext)));
+    .offset-m$(position)-$(step) {
+      @if ($position == 't') {
+        margin-top: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'b') {
+        margin-bottom: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'l') {
+        margin-left: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'r') {
+        margin-right: calc($(step) * (1var(--offset-ext)));
+      }
     }
-    .offset-inside-$(position)-$(step) {
-      padding-$(position): calc($(step) * (1var(--offset-ext)));
+    .offset-p$(position)-$(step) {
+      @if ($position == 't') {
+        padding-top: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'b') {
+        padding-bottom: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'l') {
+        padding-left: calc($(step) * (1var(--offset-ext)));
+      }
+
+      @if ($position == 'r') {
+        padding-right: calc($(step) * (1var(--offset-ext)));
+      }
     }
   }
 }

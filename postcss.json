@@ -1,0 +1,34 @@
+{
+  "use": [
+    "postcss-devtools",
+    "stylefmt",
+    "postcss-easy-import",
+    "postcss-each",
+    "postcss-mixins",
+    "postcss-at-rules-variables",
+    "postcss-custom-properties",
+    "postcss-for",
+    "postcss-conditionals",
+    "postcss-nested",
+    "postcss-calc",
+    "postcss-clearfix",
+    "postcss-initial",
+    "postcss-class-prefix",
+    "postcss-attribute-selector-prefix",
+    "postcss-sorting",
+    "postcss-reduce-initial",
+    "postcss-csso"
+  ],
+  "postcss-easy-import": {
+    "prefix": "_",
+    "extensions": ".css"
+  },
+  "postcss-calc": {
+    "precision": 6
+  },
+  "postcss-class-prefix": "sl-",
+  "postcss-attribute-selector-prefix": {
+    "prefix": "sl-",
+    "filter": ["class"]
+  }
+}

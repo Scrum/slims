@@ -1,12 +1,35 @@
+.box-inline {
+  display: inline-block;
+}
+
+.v-top {
+  vertical-align: top;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.v-base {
+  vertical-align: baseline;
+}
+
+.v-bottom {
+  vertical-align: bottom;
+}
+
 .box-left {
   float: left;
 }
+
 .box-right {
   float: right;
 }
+
 .box-relative {
   position: relative;
 }
+
 .box-absolute {
   position: absolute;
 }

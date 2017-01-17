@@ -1,0 +1,27 @@
+.row-11-min {min-height: 91.666667%;}
+
+.bg-cadetblue {background-color: cadetblue;}
+.bg-turquoise {background-color: turquoise;}
+.bg-teal-dark {background-color: rgba(38, 50, 56, 1);}
+.bg-white {background-color: rgb(255,255,255);}
+.bg-white-light {background-color: rgb(255,255,255, 0.2);}
+[data-hover*="bg-white-light"]:hover {background-color: rgb(255,255,255, 0.2);}
+
+.text-white {color: white;}
+.text-teal-light {color: rgb(0, 203, 196);}
+.text-teal-dark {color: rgba(38, 50, 56, 1);}
+.text-silver-light {color: rgba(192, 192, 192, 1);}
+.text-gray {color: gray;}
+.text-underline-none {text-decoration: none;}
+.text-strong {font-weight: bold;}
+.text-center {text-align: center;}
+
+.divider {border-style: solid;border-width: 0;}
+.divider-right {border-right-width: 1px;}
+.divider-left {border-left-width: 1px;}
+.divider-top {border-top-width: 1px;}
+.divider-bottom {border-bottom-width: 1px;}
+.divider-round {border-width: 1px;}
+.divider-silver {border-color: silver;}
+.divider-gray {border-color: #607d8b;}
+.list-style-none {list-style: none;}

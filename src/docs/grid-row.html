@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html class="sl-row-12">
-    <head>
-        <meta charset="utf-8">
-        <title>slims grid rows</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/slims.min.css">
-        <link rel="stylesheet" href="assets/slims.page.css">
-        <link rel="stylesheet" href="assets/atom-one-dark.css">
-    </head>
+<extends src="layout/base.html">
+    <block name="title">slims grid rows</block>
 
-    <body class="sl-row-12 text-silver-light bg-teal-dark">
-        <div class="row-11-min">
-            <nav class="sl-offset-pv-20 bg-cadetblue sl-offset-mb-20">
-                <a href="/" class="sl-box-inline sl-v-top sl-offset-ph-15 sl-offset-pv-15 text-white text-underline-none text-strong" data-hover="bg-white-light">slims
-                </a>
-                <a href="https://github.com/gitscrum/slims" class="sl-box-right sl-v-top sl-offset-ph-15 sl-offset-pv-15 text-white text-underline-none" data-hover="bg-white-light">view on GitHub</a>
-            </nav>
-            <main>
+    <block name="content">
         <div class="sl-clearfix sl-offset-pv-20">
             <aside class="sl-box-inline sl-v-top sl-col-2">
-                <ul class="sl-offset-m-0 sl-offset-mr-20 sl-offset-p-0 list-style-none">
-    <li>
-        <h4 class="sl-offset-m-0 sl-offset-ph-10 sl-offset-pv-15 bg-cadetblue text-teal-dark">layout</h4>
-        <ul class="sl-offset-m-0 sl-offset-p-0 list-style-none divider divider-bottom divider-left divider-right divider-gray">
-            <li class="sl-offset-ph-10 sl-offset-pv-15">
-                <a class="text-teal-light text-underline-none" href="./grid-row.html">grid-row</a>
-            </li>
-            <li class="sl-offset-ph-10 sl-offset-pv-15 divider divider-top divider-gray">
-                <a class="text-teal-light text-underline-none" href="./grid-col.html">grid-col</a>
-            </li>
-        </ul>
-    </li>
-</ul>
-
+                <module href="layout/menu.html"></module>
             </aside><!--
             --><section class="sl-box-inline sl-v-top sl-col-10">
-                <header>
+                <header >
                     <h1 class="sl-offset-mh-0">Rows cols</h1>
                     <p class="sl-offset-mt-0 text-gray">Vanilla CSS framework</p>
                 </header>
@@ -81,11 +53,5 @@
 
             </section>
         </div>
-    </main>
-        </div>
-        <footer class="sl-row-1 sl-offset-pv-20">footer content</footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-    </body>
-</html>
-
+    </block>
+</extends>
