@@ -24,7 +24,7 @@
     "pretest": "clinton && npm run lintjs && npm run lintmd && npm run lintcss",
     "test": "gulp test",
     "clean": "rm -rf dist && mkdir dist",
-    "html": "posthtml -o _docs/ -i src/docs/*.html",
+    "html": "posthtml -o docs/ -i src/docs/*.html",
     "css": "postcss -o dist/css/slims.min.css src/css/slims.css -c postcss.json",
     "build": "npm run clean && npm run css && npm run html",
     "deploy": "gulp deploy",
