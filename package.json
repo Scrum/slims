@@ -32,6 +32,7 @@
     "watch": "npm run watch:docs | npm run watch:css",
     "server": "browser-sync start --server docs --files docs",
     "dev": " npm run server | npm run watch",
+    "prepublish": "npm run build",
     "update": "updtr"
   },
   "files": [
