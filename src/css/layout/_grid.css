@@ -19,11 +19,6 @@
   }
 }
 
-.container-col {
-  margin-left: -calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-  margin-right: -calc(var(--grid-gutter) / 2 * (1var(--grid-gutter-ext)));
-}
-
 @for $i from 1 to var(--grid-col-count) {
   @if ($i != var(--grid-col-count)) {
     .col-offset-$i {
