@@ -11,6 +11,8 @@ deploy: off
 
 install:
   - ps: Install-Product node $env:nodejs_version
+  - ps: choco install GoogleChrome
+  - ps: choco install Firefox
   - npm install
 
 test_script:
