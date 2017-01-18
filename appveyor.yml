@@ -9,11 +9,17 @@ version: "{build}"
 build: off
 deploy: off
 
+before_build:
+ - ps: Set-ScreenResolution 1920 1080
+
 install:
   - ps: Install-Product node $env:nodejs_version
+  - ps: choco install GoogleChrome
+  - ps: choco install Firefox
   - npm install
 
 test_script:
   - node --version
   - npm --version
   - npm test
+  - npm run test:e2e
