@@ -18,11 +18,11 @@ test('check block sizes', async t => {
     await t.navigateTo(gridColPage.url)
         .expect(gridColPage.colums.count).eql(12)
         .resizeWindow(500, 500)
-        .expect(gridColPage.colums.nth(0).clientWidth).eql(42)
+        .expect(gridColPage.colums.nth(0).clientWidth).eql(29)
         .navigateTo(gridRowPage.url)
         .expect(gridRowPage.rows.count).eql(12)
         .resizeWindow(500, 500)
-        .expect(gridRowPage.rows.clientWidth).eql(190);
+        .expect(gridRowPage.rows.clientWidth).eql(175);
 });
 
 
