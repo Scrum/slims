@@ -24,5 +24,3 @@ test('check block sizes', async t => {
         .resizeWindow(500, 500)
         .expect(gridRowPage.rows.clientWidth).eql(175);
 });
-
-
