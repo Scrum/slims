@@ -17,12 +17,13 @@ addons:
     sources:
      - google-chrome
     packages:
-     - google-chrome-stable
+     - google-chrome-stable fluxbox
 
 before_script:
   - "export DISPLAY=:99.0"
   - "Xvfb :99 -screen 0 1920x1080x8&"
   - sleep 3
+  - fluxbox &
 
 after_success:
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
