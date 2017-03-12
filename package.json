@@ -51,7 +51,7 @@
     "babel-eslint": "^7.1.1",
     "browser-sync": "^2.18.8",
     "chokidar-cli": "^1.2.0",
-    "clinton": "^0.10.0",
+    "clinton": "^0.11.0",
     "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-lint": "^1.1.0",
     "eslint": "^3.13.1",
