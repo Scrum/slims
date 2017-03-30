@@ -91,7 +91,7 @@
     "stylefmt": "^5.1.2",
     "stylelint": "^7.7.1",
     "stylelint-config-standard": "^16.0.0",
-    "testcafe": "^0.13.0",
+    "testcafe": "^0.14.0",
     "updtr": "^0.2.3"
   },
   "posthtml": {
