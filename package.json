@@ -84,7 +84,7 @@
     "postcss-nested": "^1.0.0",
     "postcss-reduce-initial": "^1.0.1",
     "postcss-sorting": "^2.0.1",
-    "posthtml-cli": "0.2.13",
+    "posthtml-cli": "0.2.15",
     "posthtml-expressions": "^1.1.0",
     "posthtml-extend": "^0.1.2",
     "posthtml-modules": "^0.4.2",
