@@ -50,7 +50,7 @@
     "babel-eslint": "^7.1.1",
     "browser-sync": "^2.18.8",
     "chokidar-cli": "^1.2.0",
-    "clinton": "^0.11.0",
+    "clinton": "^0.12.0",
     "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-lint": "^1.1.0",
     "eslint": "^3.13.1",
@@ -84,7 +84,6 @@
     "postcss-reduce-initial": "^1.0.1",
     "postcss-sorting": "^2.0.1",
     "posthtml-cli": "0.2.16",
-    "posthtml-expressions": "^1.1.0",
     "posthtml-extend": "^0.1.2",
     "posthtml-modules": "^0.4.2",
     "rimraf": "^2.6.1",
@@ -126,7 +125,9 @@
       "postcss-class-prefix": "sl-",
       "postcss-attribute-selector-prefix": {
         "prefix": "sl-",
-        "filter": ["class"]
+        "filter": [
+          "class"
+        ]
       },
       "postcss-sorting": {},
       "postcss-reduce-initial": {},
