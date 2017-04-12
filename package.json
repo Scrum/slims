@@ -28,10 +28,9 @@
     "test": " npm run lintcss && npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
-    "clean": "rm -rf dist && mkdir dist",
     "html": "posthtml -o docs/ -i src/docs/*.html",
-    "css": "postcss -o dist/css/slims.min.css src/css/slims.css -c postcss.json && cp -a dist/. docs/",
-    "build": "npm run clean && npm run css && npm run html",
+    "css": "postcss --no-map -o dist/css/slims.min.css src/css/slims.css && cp -a dist/. docs/",
+    "build": "rimraf dist && npm run css && npm run html",
     "watch:docs": "chokidar src/docs/**/* -c \"npm run html\"",
     "watch:css": "chokidar src/css/**/* -c \"npm run css\"",
     "watch": "npm run watch:docs | npm run watch:css",
@@ -88,6 +87,7 @@
     "posthtml-expressions": "^1.1.0",
     "posthtml-extend": "^0.1.2",
     "posthtml-modules": "^0.4.2",
+    "rimraf": "^2.6.1",
     "stylefmt": "^5.1.2",
     "stylelint": "^7.7.1",
     "stylelint-config-standard": "^16.0.0",
@@ -96,11 +96,41 @@
   },
   "posthtml": {
     "extend": {
-      "root": "./src/docs/"
+      "root": "src/docs/"
     },
     "modules": {
       "root": "src/docs/",
       "from": "src/docs/layout/"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-devtools": {},
+      "stylefmt": {},
+      "postcss-easy-import": {
+        "prefix": "_",
+        "extensions": ".css"
+      },
+      "postcss-each": {},
+      "postcss-mixins": {},
+      "postcss-at-rules-variables": {},
+      "postcss-custom-properties": {},
+      "postcss-for": {},
+      "postcss-conditionals": {},
+      "postcss-nested": {},
+      "postcss-calc": {
+        "precision": 6
+      },
+      "postcss-clearfix": {},
+      "postcss-initial": {},
+      "postcss-class-prefix": "sl-",
+      "postcss-attribute-selector-prefix": {
+        "prefix": "sl-",
+        "filter": ["class"]
+      },
+      "postcss-sorting": {},
+      "postcss-reduce-initial": {},
+      "postcss-csso": {}
     }
   },
   "eslintConfig": {
