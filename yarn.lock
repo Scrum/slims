@@ -4507,9 +4507,9 @@ normalize-selector@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/normalize-selector/-/normalize-selector-0.2.0.tgz#d0b145eb691189c63a78d201dc4fdb1293ef0c03"
 
-np@^2.12.0:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/np/-/np-2.13.1.tgz#1da79a7b37743dfca76d787c9cea4331b94cf03c"
+np@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/np/-/np-2.13.2.tgz#73464a0b858a5d31645dcf0e9a2d9491df51a842"
   dependencies:
     any-observable "^0.2.0"
     chalk "^1.1.3"
