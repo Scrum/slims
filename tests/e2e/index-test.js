@@ -22,5 +22,5 @@ test('check block sizes', async t => {
         .navigateTo(gridRowPage.url)
         .expect(gridRowPage.rows.count).eql(12)
         .resizeWindow(500, 500)
-        .expect(gridRowPage.rows.clientWidth).eql(175);
+        .expect(gridRowPage.rows.clientHeight).eql(25);
 });
