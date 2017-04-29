@@ -47,7 +47,7 @@
     "Framework"
   ],
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "^7.2.3",
     "browser-sync": "^2.18.8",
     "chokidar-cli": "^1.2.0",
     "clinton": "^0.12.0",
