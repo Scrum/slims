@@ -6,6 +6,13 @@
 
 [![npm downloads](https://img.shields.io/npm/dm/slims.svg?style=flat-square)](https://www.npmjs.com/package/slims)[![npm](https://img.shields.io/npm/dt/slims.svg?style=flat-square)](https://www.npmjs.com/package/slims)[![Package Quality](http://npm.packagequality.com/shield/slims.svg?style=flat-square)](http://packagequality.com/#?package=slims)
 
+## Support
+
+![Chrome](https://rawgit.com/pixelass/browserslist-badges/master/build/Chrome.svg)
+![Firefox](https://rawgit.com/pixelass/browserslist-badges/master/build/Firefox.svg)
+![Safari](https://rawgit.com/pixelass/browserslist-badges/master/build/Safari.svg)
+![Edge](https://rawgit.com/pixelass/browserslist-badges/master/build/Edge.svg)
+
 ## Install
 ```console 
 $  npm install slims
