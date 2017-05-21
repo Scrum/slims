@@ -48,7 +48,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.18.12",
     "chokidar-cli": "^1.2.0",
     "clinton": "^0.12.0",
     "conventional-changelog-cli": "^1.2.0",
