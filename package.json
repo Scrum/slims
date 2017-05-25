@@ -80,7 +80,7 @@
     "postcss-for": "^2.1.1",
     "postcss-initial": "^1.5.3",
     "postcss-mixins": "^5.4.1",
-    "postcss-nested": "^2.0.2",
+    "postcss-nested": "^2.0.1",
     "postcss-reduce-initial": "^1.0.1",
     "postcss-sorting": "^2.0.1",
     "posthtml": "^0.9.2",
