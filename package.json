@@ -23,8 +23,9 @@
     "major": "np major --any-branch",
     "lintcss": "stylelint src/**/*.css",
     "lintjs": "eslint ./*.js",
+    "linthtml": "eslint **/*.html",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
-    "pretest": "clinton && npm run lintjs && npm run lintmd",
+    "pretest": "clinton && npm run lintjs && npm run lintmd && npm run linthtml",
     "test": " npm run lintcss && npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
@@ -59,6 +60,7 @@
     "eslint-formatter-pretty": "^1.1.0",
     "eslint-plugin-ava": "^4.2.0",
     "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-html": "^2.0.3",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-xo": "^1.0.0",
     "http-server": "^0.10.0",
@@ -148,13 +150,17 @@
       "ava",
       "xo",
       "babel",
-      "markdown"
+      "markdown",
+      "html"
     ],
     "extends": [
       "xo",
       "plugin:xo/recommended",
       "plugin:ava/recommended"
-    ]
+    ],
+    "globals": {
+      "hljs": true
+    }
   },
   "stylelint": {
     "plugins": [
