@@ -8,10 +8,10 @@
 
 ## Support
 
-![Chrome](https://rawgit.com/pixelass/browserslist-badges/master/build/Chrome.svg)
-![Firefox](https://rawgit.com/pixelass/browserslist-badges/master/build/Firefox.svg)
-![Safari](https://rawgit.com/pixelass/browserslist-badges/master/build/Safari.svg)
-![Edge](https://rawgit.com/pixelass/browserslist-badges/master/build/Edge.svg)
+![Chrome](https://img.shields.io/badge/Chrome-last%202%20version-4d8cf5.svg?style=flat-square)
+![Firefox](https://img.shields.io/badge/Firefox-last%202%20version-E66000.svg?style=flat-square)
+![IE](https://img.shields.io/badge/IE-last%202%20version-66caee.svg?style=flat-square)
+![Edge](https://img.shields.io/badge/Edge-last%202%20version-4075bb.svg?style=flat-square)
 
 ## Install
 ```console 
