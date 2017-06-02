@@ -92,6 +92,7 @@
     "stylefmt": "^6.0.0",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
+    "stylelint-csstree-validator": "^1.1.1",
     "testcafe": "^0.16.0-alpha4",
     "updtr": "^1.0.0"
   },
@@ -156,6 +157,9 @@
     ]
   },
   "stylelint": {
+    "plugins": [
+      "stylelint-csstree-validator"
+    ],
     "extends": "stylelint-config-standard"
   },
   "clinton": {
