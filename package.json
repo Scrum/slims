@@ -74,7 +74,7 @@
     "postcss-csso": "^2.0.0",
     "postcss-custom-properties": "^6.0.1",
     "postcss-devtools": "^1.1.1",
-    "postcss-each": "^0.9.3",
+    "postcss-each": "^0.10.0",
     "postcss-easy-import": "^2.0.0",
     "postcss-extend": "^1.0.5",
     "postcss-for": "^2.1.1",
