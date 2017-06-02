@@ -47,6 +47,7 @@
     "Framework"
   ],
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
     "babel-eslint": "^7.2.3",
     "browser-sync": "^2.18.12",
     "chokidar-cli": "^1.2.0",
@@ -67,7 +68,6 @@
     "postcss-attribute-selector-prefix": "0.1.0",
     "postcss-calc": "^6.0.0",
     "postcss-class-prefix": "^0.3.0",
-    "postcss-clearfix": "^1.0.0",
     "postcss-cli": "^4.0.0",
     "postcss-conditionals": "^2.1.0",
     "postcss-csso": "^2.0.0",
@@ -76,6 +76,7 @@
     "postcss-each": "^0.10.0",
     "postcss-easy-import": "^2.0.0",
     "postcss-extend": "^1.0.5",
+    "postcss-flow-root": "0.0.2",
     "postcss-for": "^2.1.1",
     "postcss-initial": "^2.0.0",
     "postcss-mixins": "^6.0.0",
@@ -94,6 +95,9 @@
     "testcafe": "^0.16.0-alpha4",
     "updtr": "^1.0.0"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "posthtml": {
     "extend": {
       "root": "src/docs/"
@@ -121,7 +125,7 @@
       "postcss-calc": {
         "precision": 6
       },
-      "postcss-clearfix": {},
+      "postcss-flow-root": {},
       "postcss-initial": {},
       "postcss-class-prefix": "sl-",
       "postcss-attribute-selector-prefix": {
@@ -130,8 +134,9 @@
           "class"
         ]
       },
-      "postcss-sorting": {},
       "postcss-reduce-initial": {},
+      "autoprefixer": {},
+      "postcss-sorting": {},
       "postcss-csso": {}
     }
   },
