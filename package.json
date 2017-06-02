@@ -16,17 +16,14 @@
     "node": ">=4"
   },
   "scripts": {
+    "precommit": "clinton && lint-staged",
     "commitmsg": "conventional-changelog-lint -e",
+    "prepublish": "npm run build",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog",
     "patch": "np patch --any-branch",
     "minor": "np minor --any-branch",
     "major": "np major --any-branch",
-    "lintcss": "stylelint src/**/*.css",
-    "lintjs": "eslint ./*.js",
-    "linthtml": "eslint **/*.html",
-    "lintmd": "eslint --ext md --rule indent: [error, 4] .",
-    "pretest": "clinton && npm run lintjs && npm run lintmd && npm run linthtml",
-    "test": " npm run lintcss && npm run test:e2e",
+    "test": "npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
     "html": "node src/build/html.js",
@@ -37,7 +34,7 @@
     "watch": "npm run watch:docs | npm run watch:css",
     "server": "browser-sync start --server docs --files docs",
     "dev": " npm run server | npm run watch",
-    "prepublish": "npm run build",
+
     "update": "updtr"
   },
   "files": [
@@ -65,6 +62,7 @@
     "eslint-plugin-xo": "^1.0.0",
     "http-server": "^0.10.0",
     "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
     "np": "^2.15.0",
     "postcss-at-rules-variables": "0.1.1",
     "postcss-attribute-selector-prefix": "0.1.0",
@@ -97,6 +95,11 @@
     "stylelint-csstree-validator": "^1.1.1",
     "testcafe": "^0.16.0-alpha4",
     "updtr": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{js,html}": "eslint",
+    "*.md": "eslint --rule indent: [error, 4] .",
+    "*.css": "stylelint"
   },
   "browserslist": [
     "last 2 versions"
