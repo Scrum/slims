@@ -43,6 +43,7 @@
     "Vanilla",
     "Framework"
   ],
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "babel-eslint": "^7.2.3",
@@ -187,6 +188,5 @@
         "off"
       ]
     }
-  },
-  "dependencies": {}
+  }
 }
