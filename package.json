@@ -97,7 +97,7 @@
   "lint-staged": {
     "*.{js,html}": "eslint",
     "*.md": "eslint --rule indent: [error, 4] .",
-    "*.css": "stylelint"
+    "src/**/*.css": "stylelint"
   },
   "browserslist": [
     "last 2 versions"
