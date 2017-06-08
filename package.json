@@ -166,7 +166,12 @@
       "fixture": true
     },
     "rules": {
-      "no-unused-expressions": [0, { "allowShortCircuit": true }]
+      "no-unused-expressions": [
+        0,
+        {
+          "allowShortCircuit": true
+        }
+      ]
     }
   },
   "stylelint": {
