@@ -1,4 +1,4 @@
-import {selector} from 'testcafe';
+import {Selector as selector} from 'testcafe';
 
 export class GridColPage {
 	constructor() {
