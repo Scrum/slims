@@ -161,7 +161,12 @@
       "plugin:ava/recommended"
     ],
     "globals": {
-      "hljs": true
+      "hljs": true,
+      "test": true,
+      "fixture": true
+    },
+    "rules": {
+      "no-unused-expressions": [0, { "allowShortCircuit": true }]
     }
   },
   "stylelint": {
