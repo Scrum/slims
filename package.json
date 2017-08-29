@@ -64,9 +64,7 @@
     "lint-staged": "^4.0.4",
     "np": "^2.16.0",
     "postcss-at-rules-variables": "0.1.1",
-    "postcss-attribute-selector-prefix": "0.1.0",
     "postcss-calc": "^6.0.0",
-    "postcss-class-prefix": "^0.3.0",
     "postcss-cli": "^4.0.0",
     "postcss-conditionals": "^3.0.0-beta.0",
     "postcss-csso": "^2.0.0",
@@ -95,7 +93,7 @@
     "testcafe": "^0.17.2-dev20170824"
   },
   "lint-staged": {
-    "*.{js,html}": "eslint",
+    "{*.js,src/**/*.html}": "eslint",
     "*.md": "eslint --rule indent: [error, 4] .",
     "src/**/*.css": "stylelint"
   },
@@ -131,13 +129,6 @@
       },
       "postcss-flow-root": {},
       "postcss-initial": {},
-      "postcss-class-prefix": "sl-",
-      "postcss-attribute-selector-prefix": {
-        "prefix": "sl-",
-        "filter": [
-          "class"
-        ]
-      },
       "postcss-reduce-initial": {},
       "autoprefixer": {},
       "postcss-sorting": {},
@@ -173,6 +164,9 @@
     }
   },
   "stylelint": {
+    "rules": {
+        "at-rule-no-unknown": null
+    },
     "plugins": [
       "stylelint-csstree-validator"
     ],
