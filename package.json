@@ -93,7 +93,7 @@
     "testcafe": "^0.17.2-dev20170824"
   },
   "lint-staged": {
-    "{*.js,src/**/*.html}": "eslint",
+    "*.{js,html}": "eslint",
     "*.md": "eslint --rule indent: [error, 4] .",
     "src/**/*.css": "stylelint"
   },
