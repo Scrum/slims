@@ -1,6 +1,3 @@
-[class*="col"],
-[class*="row"] { box-sizing: border-box; }
-
 @for $i from 1 to var(--grid-row-count) {
   .container-row-$i {
     height: calc(var(--grid-row-height) * $i * (1var(--grid-gutter-ext)));
