@@ -20,7 +20,7 @@
     "commitmsg": "conventional-changelog-lint -e",
     "prepublish": "npm run build",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog",
-    "patch": "np patch --any-branch",
+    "patch": "np patch --any-branch --yolo",
     "minor": "np minor --any-branch",
     "major": "np major --any-branch",
     "test": "npm run test:e2e",
