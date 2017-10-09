@@ -1,15 +1,30 @@
-<a name="0.5.4"></a>
-## 0.5.4 (2017-08-29)
+<a name="1.0.0"></a>
+# 1.0.0 (2017-10-09)
 
-* fix: postpublish script ([c2d5824](https://github.com/gitscrum/slims/commit/c2d5824))
-* fix: remove unused pkg ([b8dd2f4](https://github.com/gitscrum/slims/commit/b8dd2f4))
 * 0.5.4 ([205fa04](https://github.com/gitscrum/slims/commit/205fa04))
+* 1.0.0 ([bc18479](https://github.com/gitscrum/slims/commit/bc18479))
+* chore: lock ([53d04bb](https://github.com/gitscrum/slims/commit/53d04bb))
+* chore: lock ([bd33c4c](https://github.com/gitscrum/slims/commit/bd33c4c))
 * chore: remove format for eslint ([8f9bd17](https://github.com/gitscrum/slims/commit/8f9bd17))
 * chore: skip clean and test ([4e18445](https://github.com/gitscrum/slims/commit/4e18445))
+* chore: skip clean and test ([635fab8](https://github.com/gitscrum/slims/commit/635fab8))
+* chore: update babel eslint ([703d3e3](https://github.com/gitscrum/slims/commit/703d3e3))
 * chore: update changelog ([5fa8fe2](https://github.com/gitscrum/slims/commit/5fa8fe2))
+* chore: update commit lint ([3ffce93](https://github.com/gitscrum/slims/commit/3ffce93))
 * chore: update depDev ([46c645d](https://github.com/gitscrum/slims/commit/46c645d))
+* chore: update lock ([6f6b8aa](https://github.com/gitscrum/slims/commit/6f6b8aa))
+* chore(changelog): Update changelog ([c7b81ae](https://github.com/gitscrum/slims/commit/c7b81ae))
+* fix: postpublish script ([c2d5824](https://github.com/gitscrum/slims/commit/c2d5824))
+* fix: remove unused pkg ([b8dd2f4](https://github.com/gitscrum/slims/commit/b8dd2f4))
+* fix: typo ([8a95274](https://github.com/gitscrum/slims/commit/8a95274))
+* build: preprocessing ([34a9df2](https://github.com/gitscrum/slims/commit/34a9df2))
+* docs: fix github icons width and height ([cc5825b](https://github.com/gitscrum/slims/commit/cc5825b))
 * docs: update docs, close #70 ([669ce02](https://github.com/gitscrum/slims/commit/669ce02)), closes [#70](https://github.com/gitscrum/slims/issues/70)
+* docs: update template ([e9af00e](https://github.com/gitscrum/slims/commit/e9af00e))
 * style: lint ([9042d91](https://github.com/gitscrum/slims/commit/9042d91))
+* style: new line ([82206f4](https://github.com/gitscrum/slims/commit/82206f4))
+* perf: move box model to new util class ([97ae965](https://github.com/gitscrum/slims/commit/97ae965))
+* perf: remove sl- prefix ([9b6d67e](https://github.com/gitscrum/slims/commit/9b6d67e))
 
 
 
