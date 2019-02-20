@@ -20,7 +20,7 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
     # Navigate to the newly cloned directory
     cd slims
     # Assign the original repo to a remote called "upstream"
-    git remote add upstream https://github.com/gitscrum/slims
+    git remote add upstream https://github.com/scrum/slims
     # Install the tools necessary for development
     npm install
     # Run local server
