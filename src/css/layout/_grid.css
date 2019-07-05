@@ -1,11 +1,11 @@
 @for $i from 1 to var(--grid-row-count) {
   .container-row-$i {
-    height: calc(var(--grid-row-height) * $i * (1var(--grid-gutter-ext)));
+    height: calc(var(--grid-row-height) * $i)var(--grid-gutter-ext);
 
     @for $k from 1 to var(--grid-row-count) {
       @if ($k != var(--grid-row-count)) {
         .row-offset-$k {
-          margin-top: calc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k * (1var(--grid-gutter-ext)));
+          margin-top: calc((($i *  var(--grid-row-height)) / var(--grid-row-count)) * $k)var(--grid-gutter-ext);
         }
       }
     }
