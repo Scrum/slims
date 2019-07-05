@@ -24,6 +24,7 @@
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
     "html": "node src/build/html.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "css": "postcss --no-map -o dist/css/slims.min.css src/css/slims.css && cp -a dist/. docs/",
     "build": "rimraf dist && npm run css && npm run html",
     "watch:docs": "chokidar src/docs/**/* -c \"npm run html\"",
