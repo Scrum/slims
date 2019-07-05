@@ -11,6 +11,9 @@ insert_final_newline = true
 [{package.json,*.yml,*.jade,*.pss,*.css}]
 indent_size = 2
 
+[*.html]
+insert_final_newline = false
+
 [{*.js,*.jsx}]
 indent_style = tab
 

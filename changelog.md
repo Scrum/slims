@@ -669,6 +669,3 @@
 * update files ([926c997](https://github.com/gitscrum/slims/commit/926c997))
 * update files ([f43997f](https://github.com/gitscrum/slims/commit/f43997f))
 * update gulpfile & added new module ([81bb6c2](https://github.com/gitscrum/slims/commit/81bb6c2))
-
-
-
