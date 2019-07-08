@@ -1,9 +1,9 @@
 @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
   .offset-m-$(step) {
-    margin: calc($(step) * (1var(--offset-ext)));
+    margin: calc($(step))var(--offset-ext);
   }
   .offset-p-$(step) {
-    padding: calc($(step) * (1var(--offset-ext)));
+    padding: calc($(step))var(--offset-ext);
   }
 }
 
@@ -11,25 +11,25 @@
   @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
     .offset-m$(position)-$(step) {
       @if ($position == 'v') {
-        margin-left: calc($(step) * (1var(--offset-ext)));
-        margin-right: calc($(step) * (1var(--offset-ext)));
+        margin-left: calc($(step))var(--offset-ext);
+        margin-right: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'h') {
-        margin-top: calc($(step) * (1var(--offset-ext)));
-        margin-bottom: calc($(step) * (1var(--offset-ext)));
+        margin-top: calc($(step))var(--offset-ext);
+        margin-bottom: calc($(step))var(--offset-ext);
       }
     }
 
     .offset-p$(position)-$(step) {
       @if ($position == 'v') {
-        padding-left: calc($(step) * (1var(--offset-ext)));
-        padding-right: calc($(step) * (1var(--offset-ext)));
+        padding-left: calc($(step))var(--offset-ext);
+        padding-right: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'h') {
-        padding-top: calc($(step) * (1var(--offset-ext)));
-        padding-bottom: calc($(step) * (1var(--offset-ext)));
+        padding-top: calc($(step))var(--offset-ext);
+        padding-bottom: calc($(step))var(--offset-ext);
       }
     }
   }
@@ -39,36 +39,36 @@
   @for $step from var(--offset-from) to var(--offset-to) by var(--offset-step) {
     .offset-m$(position)-$(step) {
       @if ($position == 't') {
-        margin-top: calc($(step) * (1var(--offset-ext)));
+        margin-top: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'b') {
-        margin-bottom: calc($(step) * (1var(--offset-ext)));
+        margin-bottom: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'l') {
-        margin-left: calc($(step) * (1var(--offset-ext)));
+        margin-left: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'r') {
-        margin-right: calc($(step) * (1var(--offset-ext)));
+        margin-right: calc($(step))var(--offset-ext);
       }
     }
     .offset-p$(position)-$(step) {
       @if ($position == 't') {
-        padding-top: calc($(step) * (1var(--offset-ext)));
+        padding-top: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'b') {
-        padding-bottom: calc($(step) * (1var(--offset-ext)));
+        padding-bottom: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'l') {
-        padding-left: calc($(step) * (1var(--offset-ext)));
+        padding-left: calc($(step))var(--offset-ext);
       }
 
       @if ($position == 'r') {
-        padding-right: calc($(step) * (1var(--offset-ext)));
+        padding-right: calc($(step))var(--offset-ext);
       }
     }
   }

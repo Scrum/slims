@@ -1,11 +1,9 @@
 language: node_js
 node_js:
-  - v9
-  - v8
-  - v7
-  - v6
-  - v5
-  - v4
+  - 'node'
+  - 'lts/*'
+  - '10'
+  - '8'
 
 before_install:
   - stty cols 80
@@ -17,9 +15,7 @@ addons:
   firefox: latest
   apt:
     sources:
-     - google-chrome
-    packages:
-     - google-chrome-stable fluxbox
+      - google-chrome
 
 before_script:
   - "export DISPLAY=:99.0"
@@ -28,4 +24,4 @@ before_script:
   - fluxbox &
 
 after_success:
-  - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
+  - npm run coverage
