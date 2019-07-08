@@ -19,7 +19,7 @@
     "precommit": "clinton && lint-staged",
     "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
     "prepublish": "npm run build",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
+    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: Update changelog\"",
     "test": "npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
