@@ -1,0 +1,29 @@
+{
+    "no-map": true,
+    "plugins": {
+        "postcss-devtools": {},
+        "stylefmt": {},
+        "postcss-easy-import": {
+        "prefix": "_",
+        "extensions": ".css"
+        },
+        "postcss-each": {},
+        "postcss-mixins": {},
+        "postcss-at-rules-variables": {},
+        "postcss-for": {},
+        "postcss-custom-properties": {
+        "preserve": false
+        },
+        "postcss-conditionals": {},
+        "postcss-nested": {},
+        "postcss-calc": {
+        "precision": 6
+        },
+        "postcss-flow-root": {},
+        "postcss-initial": {},
+        "postcss-reduce-initial": {},
+        "autoprefixer": {},
+        "postcss-sorting": {},
+        "postcss-csso": {}
+    }
+}

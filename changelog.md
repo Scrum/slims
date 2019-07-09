@@ -1,3 +1,23 @@
+## <small>1.0.2 (2019-07-09)</small>
+
+* ci: add image macos, close #321 ([fa47900](https://github.com/scrum/slims/commit/fa47900)), closes [#321](https://github.com/scrum/slims/issues/321)
+* ci: change os ([6f5d9c6](https://github.com/scrum/slims/commit/6f5d9c6))
+* ci: chrome ([e4e37f9](https://github.com/scrum/slims/commit/e4e37f9))
+* ci: chrome again ([17e8330](https://github.com/scrum/slims/commit/17e8330))
+* build: add lost pkg ([38ae14d](https://github.com/scrum/slims/commit/38ae14d))
+* build: bundle ([d9de49c](https://github.com/scrum/slims/commit/d9de49c))
+* build: bundle ([c59bf54](https://github.com/scrum/slims/commit/c59bf54))
+* build: perf file name and position ([e8e3574](https://github.com/scrum/slims/commit/e8e3574))
+* build: postpublish script ([85737b1](https://github.com/scrum/slims/commit/85737b1))
+* build: postpublish script ([434a9e3](https://github.com/scrum/slims/commit/434a9e3))
+* build: remove trash ([43b298d](https://github.com/scrum/slims/commit/43b298d))
+* build: update build system, close #320 ([7437c18](https://github.com/scrum/slims/commit/7437c18)), closes [#320](https://github.com/scrum/slims/issues/320)
+* build: update changelog ([0baab47](https://github.com/scrum/slims/commit/0baab47))
+* style: for changelog ([e6c2c6b](https://github.com/scrum/slims/commit/e6c2c6b))
+* v1.0.1 ([a9ccd5e](https://github.com/scrum/slims/commit/a9ccd5e))
+
+
+
 ## <small>1.0.1 (2019-07-08)</small>
 
 * test: fix selector ([956b550](https://github.com/scrum/slims/commit/956b550))

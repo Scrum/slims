@@ -1,0 +1,23 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "ava",
+        "xo",
+        "babel",
+        "markdown",
+        "html"
+    ],
+    "extends": [
+        "xo",
+        "plugin:xo/recommended",
+        "plugin:ava/recommended"
+    ],
+    "globals": {
+        "hljs": true,
+        "test": true,
+        "fixture": true
+    },
+    "rules": {
+        "no-unused-expressions": [0, { "allowShortCircuit": true}]
+    }
+}

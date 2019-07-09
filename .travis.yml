@@ -1,3 +1,5 @@
+os: osx
+
 language: node_js
 node_js:
   - 'node'
@@ -13,9 +15,7 @@ sudo: required
 
 addons:
   firefox: latest
-  apt:
-    sources:
-      - google-chrome
+  chrome: stable
 
 before_script:
   - "export DISPLAY=:99.0"
