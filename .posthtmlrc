@@ -1,0 +1,14 @@
+{
+    "input": "src/docs/*.html",
+    "output": "docs",
+    "plugins": {
+        "posthtml-extend": {
+            "root": "src/docs/"
+        },
+        "posthtml-modules": {
+            "root": "src/docs/",
+            "from": "src/docs/layout/"
+        },
+        "posthtml-spaceless": {}
+    }
+}

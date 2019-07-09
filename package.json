@@ -16,17 +16,25 @@
     "node": ">=8"
   },
   "scripts": {
-    "precommit": "clinton && lint-staged",
-    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
-    "prepublish": "npm run build",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+
     "test": "npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
-    "html": "node src/build/html.js",
+
+    "precommit": "clinton && lint-staged",
+    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
+
+    "prepare": "npm run build",
+    "build": "npm run css && npm run html",
+    "html": "rimraf docs/*.html && posthtml",
+    "css": "rimraf {docs,dist}/css/*.css && postcss -o dist/css/slims.min.css src/css/slims.css && cp -a dist/. docs/",
+
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "css": "postcss --no-map -o dist/css/slims.min.css src/css/slims.css && cp -a dist/. docs/",
-    "build": "rimraf dist && npm run css && npm run html",
+
+    "lint": "eslint {src,test}/*.js *.md --fix",
+    "pretest": "clinton && npm run lint",
+
     "watch:docs": "chokidar src/docs/**/* -c \"npm run html\"",
     "watch:css": "chokidar src/css/**/* -c \"npm run css\"",
     "watch": "npm run watch:docs | npm run watch:css",
@@ -88,107 +96,5 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-csstree-validator": "^1.4.0",
     "testcafe": "^1.3.0"
-  },
-  "lint-staged": {
-    "*.{js,html}": "eslint",
-    "*.md": "eslint",
-    "src/**/*.css": "stylelint"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ],
-  "posthtml": {
-    "extend": {
-      "root": "src/docs/"
-    },
-    "modules": {
-      "root": "src/docs/",
-      "from": "src/docs/layout/"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "postcss-devtools": {},
-      "stylefmt": {},
-      "postcss-easy-import": {
-        "prefix": "_",
-        "extensions": ".css"
-      },
-      "postcss-each": {},
-      "postcss-mixins": {},
-      "postcss-at-rules-variables": {},
-      "postcss-for": {},
-      "postcss-custom-properties": {
-        "preserve": false
-      },
-      "postcss-conditionals": {},
-      "postcss-nested": {},
-      "postcss-calc": {
-        "precision": 6
-      },
-      "postcss-flow-root": {},
-      "postcss-initial": {},
-      "postcss-reduce-initial": {},
-      "autoprefixer": {},
-      "postcss-sorting": {},
-      "postcss-csso": {}
-    }
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "ava",
-      "xo",
-      "babel",
-      "markdown",
-      "html"
-    ],
-    "extends": [
-      "xo",
-      "plugin:xo/recommended",
-      "plugin:ava/recommended"
-    ],
-    "globals": {
-      "hljs": true,
-      "test": true,
-      "fixture": true
-    },
-    "rules": {
-      "no-unused-expressions": [
-        0,
-        {
-          "allowShortCircuit": true
-        }
-      ]
-    }
-  },
-  "stylelint": {
-    "rules": {
-      "function-whitespace-after": null,
-      "at-rule-no-unknown": null
-    },
-    "plugins": [
-      "stylelint-csstree-validator"
-    ],
-    "extends": "stylelint-config-standard"
-  },
-  "clinton": {
-    "ignores": [
-      "test/**",
-      "tmp/**",
-      "lib/**",
-      "*.{html,jpg}"
-    ],
-    "rules": {
-      "pkg-main": [
-        "off"
-      ],
-      "xo": [
-        "off"
-      ],
-      "ava": [
-        "off"
-      ]
-    }
   }
 }

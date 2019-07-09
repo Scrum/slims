@@ -1,0 +1,10 @@
+{
+    "plugins": [
+        "stylelint-csstree-validator"
+    ],
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "function-whitespace-after": null,
+        "at-rule-no-unknown": null
+    }
+}

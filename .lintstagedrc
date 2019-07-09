@@ -1,0 +1,6 @@
+{
+    "*.{js,html}": "eslint",
+    "*.md": "eslint",
+    "src/**/*.css": "stylelint"
+
+}
