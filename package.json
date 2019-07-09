@@ -32,8 +32,7 @@
 
     "coverage": "nyc report --reporter=text-lcov | coveralls",
 
-    "lint": "eslint {src,test}/*.js *.md --fix",
-    "pretest": "clinton && npm run lint",
+    "pretest": "clinton",
 
     "watch:docs": "chokidar src/docs/**/* -c \"npm run html\"",
     "watch:css": "chokidar src/css/**/* -c \"npm run css\"",
