@@ -1,9 +1,16 @@
+## <small>1.0.3 (2019-09-18)</small>
+
+* build: move contrib to github folder ([9602ed9](https://github.com/scrum/slims/commit/9602ed9))
+* build: not used anymore ([15c19c4](https://github.com/scrum/slims/commit/15c19c4))
+* build: update depDev ([1228468](https://github.com/scrum/slims/commit/1228468))
+* Update issue templates ([3ee080e](https://github.com/scrum/slims/commit/3ee080e))
+
+
+
 ## <small>1.0.2 (2019-07-09)</small>
 
-* ci: add image macos, close #321 ([fa47900](https://github.com/scrum/slims/commit/fa47900)), closes [#321](https://github.com/scrum/slims/issues/321)
-* ci: change os ([6f5d9c6](https://github.com/scrum/slims/commit/6f5d9c6))
-* ci: chrome ([e4e37f9](https://github.com/scrum/slims/commit/e4e37f9))
-* ci: chrome again ([17e8330](https://github.com/scrum/slims/commit/17e8330))
+* 1.0.2 ([ef1a41f](https://github.com/scrum/slims/commit/ef1a41f))
+* v1.0.1 ([a9ccd5e](https://github.com/scrum/slims/commit/a9ccd5e))
 * build: add lost pkg ([38ae14d](https://github.com/scrum/slims/commit/38ae14d))
 * build: bundle ([d9de49c](https://github.com/scrum/slims/commit/d9de49c))
 * build: bundle ([c59bf54](https://github.com/scrum/slims/commit/c59bf54))
@@ -12,9 +19,13 @@
 * build: postpublish script ([434a9e3](https://github.com/scrum/slims/commit/434a9e3))
 * build: remove trash ([43b298d](https://github.com/scrum/slims/commit/43b298d))
 * build: update build system, close #320 ([7437c18](https://github.com/scrum/slims/commit/7437c18)), closes [#320](https://github.com/scrum/slims/issues/320)
+* build: update changelog ([fa0af15](https://github.com/scrum/slims/commit/fa0af15))
 * build: update changelog ([0baab47](https://github.com/scrum/slims/commit/0baab47))
+* ci: add image macos, close #321 ([fa47900](https://github.com/scrum/slims/commit/fa47900)), closes [#321](https://github.com/scrum/slims/issues/321)
+* ci: change os ([6f5d9c6](https://github.com/scrum/slims/commit/6f5d9c6))
+* ci: chrome ([e4e37f9](https://github.com/scrum/slims/commit/e4e37f9))
+* ci: chrome again ([17e8330](https://github.com/scrum/slims/commit/17e8330))
 * style: for changelog ([e6c2c6b](https://github.com/scrum/slims/commit/e6c2c6b))
-* v1.0.1 ([a9ccd5e](https://github.com/scrum/slims/commit/a9ccd5e))
 
 
 

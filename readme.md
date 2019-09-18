@@ -20,4 +20,4 @@ $  npm install slims
 
 
 ## Contributing
-See [contributing](contributing.md)
+See [contributing](.github/contributing.md)
