@@ -19,7 +19,6 @@
         "postcss-calc": {
         "precision": 6
         },
-        "postcss-flow-root": {},
         "postcss-initial": {},
         "postcss-reduce-initial": {},
         "autoprefixer": {},
