@@ -1,9 +1,23 @@
+## <small>1.0.4 (2019-10-07)</small>
+
+* ci: separate ci and local test ([d6d3ada](https://github.com/scrum/slims/commit/d6d3ada))
+* docs: update ([8047a4c](https://github.com/scrum/slims/commit/8047a4c))
+* build: bundle ([2608def](https://github.com/scrum/slims/commit/2608def))
+* build: update depDev ([01c702c](https://github.com/scrum/slims/commit/01c702c))
+* build: use global gitignore for this ([915e304](https://github.com/scrum/slims/commit/915e304))
+* fix: col ([f326f9a](https://github.com/scrum/slims/commit/f326f9a))
+* fix: drop postcss pkf flow root ([197af44](https://github.com/scrum/slims/commit/197af44))
+
+
+
 ## <small>1.0.3 (2019-09-18)</small>
 
+* 1.0.3 ([8b53d68](https://github.com/scrum/slims/commit/8b53d68))
+* Update issue templates ([3ee080e](https://github.com/scrum/slims/commit/3ee080e))
 * build: move contrib to github folder ([9602ed9](https://github.com/scrum/slims/commit/9602ed9))
 * build: not used anymore ([15c19c4](https://github.com/scrum/slims/commit/15c19c4))
+* build: update changelog ([adcd344](https://github.com/scrum/slims/commit/adcd344))
 * build: update depDev ([1228468](https://github.com/scrum/slims/commit/1228468))
-* Update issue templates ([3ee080e](https://github.com/scrum/slims/commit/3ee080e))
 
 
 
