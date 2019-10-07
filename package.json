@@ -17,7 +17,8 @@
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
-    "test": "npm run test:e2e",
+    "test": "testcafe \"chrome:headless\" tests/e2e/*-test.js --app \"http-server ./ -s\"",
+    "test:ci": "npm run test:e2e",
     "test:e2e": "npm run build && npm run testcafe",
     "testcafe": "testcafe all tests/e2e/*-test.js --app \"http-server ./ -s\"",
     "precommit": "clinton && lint-staged",

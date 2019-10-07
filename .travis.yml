@@ -23,5 +23,8 @@ before_script:
   - sleep 3
   - fluxbox &
 
+script:
+  - npm run test:ci
+
 after_success:
   - npm run coverage
