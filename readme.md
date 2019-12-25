@@ -6,6 +6,8 @@
 
 [![npm downloads](https://img.shields.io/npm/dm/slims.svg?style=flat-square)](https://www.npmjs.com/package/slims)[![npm](https://img.shields.io/npm/dt/slims.svg?style=flat-square)](https://www.npmjs.com/package/slims)[![Package Quality](http://npm.packagequality.com/shield/slims.svg?style=flat-square)](http://packagequality.com/#?package=slims)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3435b4a-77fe-4b29-a5c6-d35c0408b413/deploy-status?style=flat-square)](https://app.netlify.com/sites/slims/deploys)
+
 ## Support
 
 ![Chrome](https://img.shields.io/badge/Chrome-last%202%20version-4d8cf5.svg?style=flat-square)
