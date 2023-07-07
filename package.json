@@ -87,7 +87,7 @@
     "posthtml-spaceless": "^0.0.3",
     "rimraf": "^3.0.0",
     "stylefmt": "^6.0.3",
-    "stylelint": "^11.0.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-csstree-validator": "^1.6.1",
     "testcafe": "^1.5.0"
